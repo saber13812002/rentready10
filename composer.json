@@ -9,6 +9,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
+        "saber13812002/laravel-nova": "4.32.16",
         "laravel/tinker": "^2.8"
     },
     "require-dev": {
@@ -64,5 +65,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "saber13812002/laravel-nova": {
+            "type": "vcs",
+            "url": "https://github.com/saber13812002/nova.git"
+        }
+    }
 }
