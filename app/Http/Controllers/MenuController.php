@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Menu;
 use App\Http\Requests\StoreMenuRequest;
 use App\Http\Requests\UpdateMenuRequest;
+use Illuminate\Support\Facades\Cache;
 
 class MenuController extends Controller
 {
@@ -13,7 +14,9 @@ class MenuController extends Controller
      */
     public function index()
     {
-        //
+        return Cache::rememberForever('menu',function (){
+            return Menu::query()->where('enabled',1)->get();
+        });
     }
 
     /**

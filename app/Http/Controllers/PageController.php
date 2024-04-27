@@ -17,7 +17,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $menus = Menu::all();
+        $menus = (new MenuController)->index();
         $sliders = Slider::all();
 //        dd($menu);
         return view('index', compact('menus', 'sliders'));
@@ -29,7 +29,7 @@ class PageController extends Controller
      */
     public function solutions()
     {
-        $menus = Menu::all();
+        $menus = (new MenuController)->index();
         $solutions = Solution::all();
 
         return view('solutions', compact('menus', 'solutions'));
@@ -41,7 +41,7 @@ class PageController extends Controller
      */
     public function resources()
     {
-        $menus = Menu::all();
+        $menus = (new MenuController)->index();
         return view('resources', compact('menus'));
     }
 
@@ -51,7 +51,7 @@ class PageController extends Controller
      */
     public function company()
     {
-        $menus = Menu::all();
+        $menus = (new MenuController)->index();
         return view('company', compact('menus'));
     }
 
@@ -61,7 +61,7 @@ class PageController extends Controller
      */
     public function contact()
     {
-        $menus = Menu::all();
+        $menus = (new MenuController)->index();
         return view('contact', compact('menus'));
     }
 
@@ -71,7 +71,7 @@ class PageController extends Controller
      */
     public function privacy()
     {
-        $menus = Menu::all();
+        $menus = (new MenuController)->index();
         return view('privacy', compact('menus'));
     }
 
@@ -80,7 +80,7 @@ class PageController extends Controller
      */
     public function terms()
     {
-        $menus = Menu::all();
+        $menus = (new MenuController)->index();
         return view('terms', compact('menus'));
     }
 
