@@ -3,28 +3,25 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rules;
-use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class User extends Resource
+class Menu extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\User>
+     * @var class-string<\App\Models\Menu>
      */
-    public static $model = \App\Models\User::class;
+    public static $model = \App\Models\Menu::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'name';
+    public static $title = 'id';
 
     /**
      * The columns that should be searched.
@@ -32,7 +29,7 @@ class User extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name', 'email',
+        'id',
     ];
 
     /**
@@ -46,29 +43,12 @@ class User extends Resource
         return [
             ID::make()->sortable(),
 
-            Gravatar::make()->maxWidth(50),
-
-            Text::make('Name')
-                ->sortable()
-                ->rules('required', 'max:255'),
-
-            Text::make('Email')
-                ->sortable()
-                ->rules('required', 'email', 'max:254')
-                ->creationRules('unique:users,email')
-                ->updateRules('unique:users,email,{{resourceId}}'),
-
-
-            Text::make('name'),
-            Text::make('email'),
-            Text::make('email_verified_at'),
-            Text::make('created_at'),
-            Text::make('updated_at'),
-
-            Password::make('Password')
-                ->onlyOnForms()
-                ->creationRules('required', Rules\Password::defaults())
-                ->updateRules('nullable', Rules\Password::defaults()),
+            Text::make('title')->sortable(),
+            Text::make('slug')->sortable(),
+            Text::make('enabled')->sortable(),
+            Text::make('order')->sortable(),
+            Text::make('created_at')->sortable(),
+            Text::make('updated_at')->sortable(),
         ];
     }
 
@@ -113,6 +93,8 @@ class User extends Resource
      */
     public function actions(NovaRequest $request)
     {
-        return [];
+        return [
+            new Actions\DeleteUserData
+        ];
     }
 }
