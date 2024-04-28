@@ -14,9 +14,6 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return Cache::rememberForever('menu',function (){
-            return Menu::query()->where('enabled',1)->get();
-        });
     }
 
     /**

@@ -8,6 +8,8 @@ use App\Http\Requests\StorePageRequest;
 use App\Http\Requests\UpdatePageRequest;
 use App\Models\Slider;
 use App\Models\Solution;
+use App\Repositories\MenuRepository;
+use App\Repositories\SliderRepository;
 
 class PageController extends Controller
 {
@@ -17,8 +19,8 @@ class PageController extends Controller
      */
     public function index()
     {
-        $menus = (new MenuController)->index();
-        $sliders = Slider::all();
+        $menus = (new MenuRepository())->getEnabled();
+        $sliders = (new SliderRepository())->getEnabled();
 //        dd($menu);
         return view('index', compact('menus', 'sliders'));
     }
