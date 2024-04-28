@@ -28,6 +28,7 @@ class CacheForget extends Command
     {
         Cache::forget('menu');
         Cache::forget('slider');
+        Cache::forget('footer');
 
         $this->info('done');
     }

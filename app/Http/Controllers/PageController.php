@@ -8,6 +8,7 @@ use App\Http\Requests\StorePageRequest;
 use App\Http\Requests\UpdatePageRequest;
 use App\Models\Slider;
 use App\Models\Solution;
+use App\Repositories\FooterRepository;
 use App\Repositories\MenuRepository;
 use App\Repositories\SliderRepository;
 
@@ -21,8 +22,9 @@ class PageController extends Controller
     {
         $menus = (new MenuRepository())->getEnabled();
         $sliders = (new SliderRepository())->getEnabled();
+        $footers = (new FooterRepository())->getEnabled();
 //        dd($menu);
-        return view('index', compact('menus', 'sliders'));
+        return view('index', compact('menus', 'sliders', 'footers'));
     }
 
 

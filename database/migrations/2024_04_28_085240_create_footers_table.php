@@ -26,7 +26,7 @@ return new class extends Migration
             $table->boolean('contact_us_show');
             $table->boolean('become_pro_show');
 
-            $table->boolean('become_pro_link');
+            $table->string('become_pro_link', 500);
 
 
 

@@ -32,7 +32,7 @@ class FootersTableSeeder extends Seeder
                 'privacy_show' => 1,
                 'contact_us_show' => 1,
                 'become_pro_show' => 1,
-                'become_pro_link' => "https://forms.office.com/pages/responsepage.aspx?id=qwYkC7-7nkuVok9d2X9z69ifxk1djudFjSJPDr2zyIdUNVIxWjcyTjdGRlM5RkwzWDBMRlcwR0hIMC4u/.",
+                'become_pro_link' => 'https://forms.office.com/pages/responsepage.aspx?id=qwYkC7-7nkuVok9d2X9z69ifxk1djudFjSJPDr2zyIdUNVIxWjcyTjdGRlM5RkwzWDBMRlcwR0hIMC4u/.',
                 'created_at' => '2024-04-28 12:28:06',
                 'updated_at' => '2024-04-28 12:28:09',
             ),
