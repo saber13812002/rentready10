@@ -43,6 +43,14 @@ class OptionsTableSeeder extends Seeder
                 'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-02 16:30:03',
             ),
+            3 => 
+            array (
+                'id' => 4,
+                'key' => 'benefits_image2',
+                'value' => '/storage/assets/img/Mask_group.png',
+                'created_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-02 16:30:03',
+            ),
         ));
         
         
