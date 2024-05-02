@@ -15,7 +15,7 @@ class SliderRepository
 
     public static function getEnabled()
     {
-        return Cache::rememberForever('slider',function (){
+        return Cache::rememberForever('sliders',function (){
             return Slider::query()->whereEnabled(1)->get();
         });
     }

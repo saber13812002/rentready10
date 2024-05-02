@@ -8,8 +8,10 @@ use App\Http\Requests\StorePageRequest;
 use App\Http\Requests\UpdatePageRequest;
 use App\Models\Slider;
 use App\Models\Solution;
+use App\Repositories\BenefitRepository;
 use App\Repositories\FooterRepository;
 use App\Repositories\MenuRepository;
+use App\Repositories\OptionRepository;
 use App\Repositories\SliderRepository;
 
 class PageController extends Controller
@@ -20,11 +22,23 @@ class PageController extends Controller
      */
     public function index()
     {
+        $options = (new OptionRepository())->getEnabled();
+
+//        dd($options['title']);
+
         $menus = (new MenuRepository())->getEnabled();
         $sliders = (new SliderRepository())->getEnabled();
+        $benefits = (new BenefitRepository())->getEnabled();
+//        dd($benefits[0]['title']);
         $footers = (new FooterRepository())->getEnabled();
 //        dd($menu);
-        return view('index', compact('menus', 'sliders', 'footers'));
+        return view('index', compact(
+            'menus',
+            'sliders',
+            'options',
+            'benefits',
+            'footers'
+        ));
     }
 
 

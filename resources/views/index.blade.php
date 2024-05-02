@@ -2297,8 +2297,9 @@
 
 
 
+{{--        Benefits of Rent Ready --}}
 
-        @if(false)
+        @if(true)
 
 <section data-test="page-section" data-section-theme="" class="page-section
 
@@ -2974,7 +2975,7 @@
 </style><div class="fluid-engine fe-65f0200a6682833cefbfb833" id="yui_3_17_2_1_1712485179006_89"><div class="fe-block fe-block-f0e428be677553d7a799" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-f0e428be677553d7a799"><div class="sqs-block-content">
 
 <div class="sqs-html-content">
-  <h1 style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.163636s;" class="preSlide"><strong>Benefits of Rent Ready </strong></h1>
+  <h1 style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.163636s;" class="preSlide"><strong>Benefits of {{ $options['title'] }} </strong></h1>
 </div>
 
 
@@ -3004,7 +3005,7 @@
 </div></div></div><div class="fe-block fe-block-96ae1e7d7195e400d57a" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-96ae1e7d7195e400d57a"><div class="sqs-block-content">
 
 <div class="sqs-html-content">
-  <h3 style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.170455s;" class="preSlide"><strong>Faster Turn Times</strong></h3>
+  <h3 style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.170455s;" class="preSlide"><strong>{{$benefits[0]['title']}}</strong></h3>
 </div>
 
 
@@ -3096,7 +3097,7 @@
 
 
 
-            <img data-stretch="false" data-src="/storage/assets/img/logo/1.png" data-image="/storage/assets/img/logo/1.png" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Faster Turn Times" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/1.png" width="288" height="288" sizes="(max-width: 640px) 100vw, (max-width: 767px) 25vw, 12.5vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="/storage/assets/img/logo/1.png?format=100w 100w, /storage/assets/img/logo/1.png?format=300w 300w, /storage/assets/img/logo/1.png?format=500w 500w, /storage/assets/img/logo/1.png?format=750w 750w, /storage/assets/img/logo/1.png?format=1000w 1000w, /storage/assets/img/logo/1.png?format=1500w 1500w, /storage/assets/img/logo/1.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" data-src="{{ $benefits[0]['logo'] }}" data-image="{{ $benefits[0]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Faster Turn Times" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/1.png" width="288" height="288" sizes="(max-width: 640px) 100vw, (max-width: 767px) 25vw, 12.5vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="{{ $benefits[0]['logo'] }}?format=100w 100w, {{ $benefits[0]['logo'] }}?format=300w 300w, {{ $benefits[0]['logo'] }}?format=500w 500w, {{ $benefits[0]['logo'] }}?format=750w 750w, {{ $benefits[0]['logo'] }}?format=1000w 1000w, {{ $benefits[0]['logo'] }}?format=1500w 1500w, {{ $benefits[0]['logo'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3143,7 +3144,7 @@
 </div></div></div><div class="fe-block fe-block-f1871087c3cc8f232f9d" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-f1871087c3cc8f232f9d"><div class="sqs-block-content">
 
 <div class="sqs-html-content">
-  <p class="sqsrte-large preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.184091s;">Our digital turn board automates service scheduling with Rent Ready's Vendor Network, helping shave days off your turns so you can put units back on the market faster.</p>
+  <p class="sqsrte-large preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.184091s;">{{$benefits[0]['description']}}</p>
 </div>
 
 
@@ -3173,7 +3174,7 @@
 </div></div></div><div class="fe-block fe-block-dfc2108ca4800a97a9d9" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-dfc2108ca4800a97a9d9"><div class="sqs-block-content">
 
 <div class="sqs-html-content">
-  <h3 style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.190909s;" class="preSlide"><strong>Reduced Cost Per Turn</strong></h3>
+  <h3 style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.190909s;" class="preSlide"><strong>{{$benefits[1]['title']}}</strong></h3>
 </div>
 
 
@@ -3345,7 +3346,7 @@
 
 
 
-            <img data-stretch="false" crossorigin="" data-src="/storage/assets/img/logo/2.png" data-image="/storage/assets/img/logo/2.png" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Lower Costs" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/2.png" width="288" height="288" sizes="100vw" style="display: block; object-fit: cover; object-position: 50% 50%; visibility: hidden;" srcset="/storage/assets/img/logo/2.png?format=100w 100w, /storage/assets/img/logo/2.png?format=300w 300w, /storage/assets/img/logo/2.png?format=500w 500w, /storage/assets/img/logo/2.png?format=750w 750w, /storage/assets/img/logo/2.png?format=1000w 1000w, /storage/assets/img/logo/2.png?format=1500w 1500w, /storage/assets/img/logo/2.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" crossorigin="" data-src="{{ $benefits[1]['logo'] }}" data-image="{{ $benefits[1]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Lower Costs" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/2.png" width="288" height="288" sizes="100vw" style="display: block; object-fit: cover; object-position: 50% 50%; visibility: hidden;" srcset="{{ $benefits[1]['logo'] }}?format=100w 100w, {{ $benefits[1]['logo'] }}?format=300w 300w, {{ $benefits[1]['logo'] }}?format=500w 500w, {{ $benefits[1]['logo'] }}?format=750w 750w, {{ $benefits[1]['logo'] }}?format=1000w 1000w, {{ $benefits[1]['logo'] }}?format=1500w 1500w, {{ $benefits[1]['logo'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3400,7 +3401,7 @@
 </div></div></div><div class="fe-block fe-block-67e9afe70411e52fcd1c" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-67e9afe70411e52fcd1c"><div class="sqs-block-content">
 
 <div class="sqs-html-content">
-  <p class="sqsrte-large preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.204545s;">Leveraging the Rent Ready Vendor Network, our simplified cost structure provides standardized portfolio wide pricing that drives budgeting and forecasting predictability.</p>
+  <p class="sqsrte-large preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.204545s;">{{ $benefits[0]['description'] }}</p>
 </div>
 
 
@@ -3430,7 +3431,7 @@
 </div></div></div><div class="fe-block fe-block-368a8f891e8d5640ed12" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-368a8f891e8d5640ed12"><div class="sqs-block-content">
 
 <div class="sqs-html-content">
-  <h3 style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.211364s;" class="preSlide"><strong>Improved Operating Efficiency</strong></h3>
+  <h3 style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.211364s;" class="preSlide"><strong>{{$benefits[2]['title']}}</strong></h3>
 </div>
 
 
@@ -3602,7 +3603,7 @@
 
 
 
-            <img data-stretch="false" crossorigin="" data-src="/storage/assets/img/logo/3.png" data-image="/storage/assets/img/logo/3.png" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Increased Operating Efficiency" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/3.png" width="288" height="288" sizes="100vw" style="display: block; object-fit: cover; object-position: 50% 50%; visibility: hidden;" srcset="/storage/assets/img/logo/3.png?format=100w 100w, /storage/assets/img/logo/3.png?format=300w 300w, /storage/assets/img/logo/3.png?format=500w 500w, /storage/assets/img/logo/3.png?format=750w 750w, /storage/assets/img/logo/3.png?format=1000w 1000w, /storage/assets/img/logo/3.png?format=1500w 1500w, /storage/assets/img/logo/3.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" crossorigin="" data-src="{{ $benefits[2]['logo'] }}" data-image="{{ $benefits[2]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Increased Operating Efficiency" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/3.png" width="288" height="288" sizes="100vw" style="display: block; object-fit: cover; object-position: 50% 50%; visibility: hidden;" srcset="{{ $benefits[2]['logo'] }}?format=100w 100w, {{ $benefits[2]['logo'] }}?format=300w 300w, {{ $benefits[2]['logo'] }}?format=500w 500w, {{ $benefits[2]['logo'] }}?format=750w 750w, {{ $benefits[2]['logo'] }}?format=1000w 1000w, {{ $benefits[2]['logo'] }}?format=1500w 1500w, {{ $benefits[2]['logo'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3657,7 +3658,7 @@
 </div></div></div><div class="fe-block fe-block-1b0834759b88c6710880" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-1b0834759b88c6710880"><div class="sqs-block-content">
 
 <div class="sqs-html-content">
-  <p class="sqsrte-large preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.225s;">Our technology, support infrastructure and vendor network enable owners and operators to optimize operations by automating the make-ready process and outsourcing vendor management, thereby reducing costs and turn delays. Optimizing operations across a portfolio frees up time to focus on higher value priorities like improving the resident experience.</p>
+  <p class="sqsrte-large preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.225s;">{{ $benefits[2]['description'] }}</p>
 </div>
 
 
@@ -3749,7 +3750,7 @@
 
 
 
-            <img data-stretch="false" data-src="/storage/assets/img/Group_2772.png" data-image="/storage/assets/img/Group_2772.png" data-image-dimensions="2349x1262" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/Group_2772.png" width="2349" height="1262" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 41.66666666666667vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="/storage/assets/img/Group_2772.png?format=100w 100w, /storage/assets/img/Group_2772.png?format=300w 300w, /storage/assets/img/Group_2772.png?format=500w 500w, /storage/assets/img/Group_2772.png?format=750w 750w, /storage/assets/img/Group_2772.png?format=1000w 1000w, /storage/assets/img/Group_2772.png?format=1500w 1500w, /storage/assets/img/Group_2772.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" data-src="{{ $options['benefits_image'] }}" data-image="{{ $options['benefits_image'] }}" data-image-dimensions="2349x1262" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/Group_2772.png" width="2349" height="1262" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 41.66666666666667vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="{{ $options['benefits_image'] }}?format=100w 100w, {{ $options['benefits_image'] }}?format=300w 300w, {{ $options['benefits_image'] }}?format=500w 500w, {{ $options['benefits_image'] }}?format=750w 750w, {{ $options['benefits_image'] }}?format=1000w 1000w, {{ $options['benefits_image'] }}?format=1500w 1500w, {{ $options['benefits_image'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3856,11 +3857,11 @@
 
 
 
-
+@if(false)
 
             <img data-stretch="false" data-src="/storage/assets/img/Mask_group.png" data-image="/storage/assets/img/Mask_group.png" data-image-dimensions="1606x1504" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/Mask+group.png" width="1606" height="1504" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 87.5vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="/storage/assets/img/Mask_group.png?format=100w 100w, /storage/assets/img/Mask_group.png?format=300w 300w, /storage/assets/img/Mask_group.png?format=500w 500w, /storage/assets/img/Mask_group.png?format=750w 750w, /storage/assets/img/Mask_group.png?format=1000w 1000w, /storage/assets/img/Mask_group.png?format=1500w 1500w, /storage/assets/img/Mask_group.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
-
+@endif
 
 
             <div class="fluidImageOverlay"></div>
