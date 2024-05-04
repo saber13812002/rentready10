@@ -5415,7 +5415,7 @@
 
 
 
-        @if(false)
+        @if(true)
 
 <section data-test="page-section" data-section-theme="black" class="page-section
 
@@ -5578,403 +5578,7 @@
 <div class="
     user-items-list-item-container
     user-items-list-banner-slideshow
-  " data-controller="UserItemsListBannerSlideshow" data-progress-indicators-placement="" data-is-infinite-enabled="true" data-is-card-enabled="false" data-title-alignment="center" data-body-alignment="center" data-button-alignment="center" data-show-adjacent-slides="false" data-card-vertical-position="middle" data-card-horizontal-position="center" data-navigation-controls="arrows" data-navigation-placement="center" data-navigation-alignment="center" data-space-between-slides-value="0" data-space-between-slides-unit="px" data-section-id="65eeaef0494604497505a5a9" data-current-context="{
-&quot;userItems&quot;: [ {
-&quot;title&quot;: &quot;\&quot;Turns just got a lot easier with this new turn board system! I can schedule all my turns in a matter of minutes - this is exciting.\&quot;&quot;,
-&quot;description&quot;: &quot;&lt;p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;&gt;Property Manager&lt;br&gt;Raleigh, NC&lt;\/p&gt;&quot;,
-&quot;button&quot;: {
-&quot;buttonText&quot;: &quot;Click Here&quot;,
-&quot;buttonLink&quot;: &quot;/&quot;
-},
-&quot;image&quot;: null
-}, {
-&quot;title&quot;: &quot;\&quot;Being able to see real-time updates of service status keeps me and my entire team in the know about our turns - easy as 1, 2, 3.\&quot;&quot;,
-&quot;description&quot;: &quot;&lt;p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;&gt;Maintenance Manager&lt;br&gt;Atlanta, GA&lt;\/p&gt;&quot;,
-&quot;button&quot;: {
-&quot;buttonText&quot;: &quot;Make It&quot;,
-&quot;buttonLink&quot;: &quot;#&quot;
-},
-&quot;mediaFocalPoint&quot;: {
-&quot;x&quot;: 0.5055350553505535,
-&quot;y&quot;: 0.7433776217932648
-},
-&quot;imageId&quot;: &quot;65eeaef0494604497505a59f&quot;,
-&quot;image&quot;: {
-&quot;id&quot;: &quot;65eeaef0494604497505a59f&quot;,
-&quot;recordType&quot;: 2,
-&quot;addedOn&quot;: 1618511383668,
-&quot;updatedOn&quot;: 1618512009075,
-&quot;starred&quot;: false,
-&quot;passthrough&quot;: false,
-&quot;workflowState&quot;: 1,
-&quot;publishOn&quot;: 1618511383668,
-&quot;authorId&quot;: &quot;65ccc9348a71e5742a98e917&quot;,
-&quot;systemDataId&quot;: &quot;1618511387030-5LI1E5QMVTQ2RY9S00A4&quot;,
-&quot;systemDataVariants&quot;: &quot;2500x1723,100w,300w,500w,750w,1000w,1500w,2500w&quot;,
-&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
-&quot;filename&quot;: &quot;20140228_Trade 151_0046 1.jpg&quot;,
-&quot;mediaFocalPoint&quot;: {
-&quot;x&quot;: 0.5,
-&quot;y&quot;: 0.5,
-&quot;source&quot;: 3
-},
-&quot;colorData&quot;: {
-&quot;topLeftAverage&quot;: &quot;f5fbfb&quot;,
-&quot;topRightAverage&quot;: &quot;f0f5f9&quot;,
-&quot;bottomLeftAverage&quot;: &quot;6189a3&quot;,
-&quot;bottomRightAverage&quot;: &quot;514f41&quot;,
-&quot;centerAverage&quot;: &quot;e4edf1&quot;,
-&quot;suggestedBgColor&quot;: &quot;f5fbfb&quot;
-},
-&quot;urlId&quot;: &quot;6pkz29duzq94fmhgz4r0cem3u3wyj5-gbb2s-d4d62&quot;,
-&quot;title&quot;: &quot;&quot;,
-&quot;body&quot;: null,
-&quot;likeCount&quot;: 0,
-&quot;commentCount&quot;: 0,
-&quot;publicCommentCount&quot;: 0,
-&quot;commentState&quot;: 2,
-&quot;unsaved&quot;: false,
-&quot;author&quot;: {
-&quot;id&quot;: &quot;65ccc9348a71e5742a98e917&quot;,
-&quot;displayName&quot;: &quot;Ekaterina Trushina&quot;,
-&quot;firstName&quot;: &quot;Ekaterina&quot;,
-&quot;lastName&quot;: &quot;Trushina&quot;,
-&quot;bio&quot;: &quot;&quot;
-},
-&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618511387030-5LI1E5QMVTQ2RY9S00A4/20140228_Trade+151_0046+1.jpg&quot;,
-&quot;contentType&quot;: &quot;image/jpeg&quot;,
-&quot;items&quot;: [ ],
-&quot;pushedServices&quot;: { },
-&quot;pendingPushedServices&quot;: { },
-&quot;recordTypeLabel&quot;: &quot;image&quot;,
-&quot;originalSize&quot;: &quot;2500x1723&quot;
-}
-}, {
-&quot;title&quot;: &quot;“This is great! Every property should be using this as their turn board! Throwing the dry erase board away... finally!” &quot;,
-&quot;description&quot;: &quot;&lt;p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;&gt;Property Manager&lt;br&gt;Atlanta, GA&lt;\/p&gt;&quot;,
-&quot;button&quot;: {
-&quot;buttonText&quot;: &quot;Make It&quot;
-},
-&quot;mediaFocalPoint&quot;: {
-&quot;x&quot;: 0.5129151291512916,
-&quot;y&quot;: 0.6000701016473887
-},
-&quot;imageId&quot;: &quot;65eeaef0494604497505a5a5&quot;,
-&quot;image&quot;: {
-&quot;id&quot;: &quot;65eeaef0494604497505a5a5&quot;,
-&quot;recordType&quot;: 2,
-&quot;addedOn&quot;: 1618511464422,
-&quot;updatedOn&quot;: 1618512009086,
-&quot;starred&quot;: false,
-&quot;passthrough&quot;: false,
-&quot;workflowState&quot;: 1,
-&quot;publishOn&quot;: 1618511464422,
-&quot;authorId&quot;: &quot;65ccc9348a71e5742a98e917&quot;,
-&quot;systemDataId&quot;: &quot;1618511467879-K5J9BYNACHJVDV3BNSFU&quot;,
-&quot;systemDataVariants&quot;: &quot;2500x1643,100w,300w,500w,750w,1000w,1500w,2500w&quot;,
-&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
-&quot;filename&quot;: &quot;Aro Ha_0387 1.jpg&quot;,
-&quot;mediaFocalPoint&quot;: {
-&quot;x&quot;: 0.5,
-&quot;y&quot;: 0.5,
-&quot;source&quot;: 3
-},
-&quot;colorData&quot;: {
-&quot;topLeftAverage&quot;: &quot;f0dacc&quot;,
-&quot;topRightAverage&quot;: &quot;ead3c6&quot;,
-&quot;bottomLeftAverage&quot;: &quot;ad8d7e&quot;,
-&quot;bottomRightAverage&quot;: &quot;665952&quot;,
-&quot;centerAverage&quot;: &quot;8a92a4&quot;,
-&quot;suggestedBgColor&quot;: &quot;f1dacc&quot;
-},
-&quot;urlId&quot;: &quot;e4k1rda7avvts6shnilax0n8lqjx9h-jmpj3-mlkky&quot;,
-&quot;title&quot;: &quot;&quot;,
-&quot;body&quot;: null,
-&quot;likeCount&quot;: 0,
-&quot;commentCount&quot;: 0,
-&quot;publicCommentCount&quot;: 0,
-&quot;commentState&quot;: 2,
-&quot;unsaved&quot;: false,
-&quot;author&quot;: {
-&quot;id&quot;: &quot;65ccc9348a71e5742a98e917&quot;,
-&quot;displayName&quot;: &quot;Ekaterina Trushina&quot;,
-&quot;firstName&quot;: &quot;Ekaterina&quot;,
-&quot;lastName&quot;: &quot;Trushina&quot;,
-&quot;bio&quot;: &quot;&quot;
-},
-&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618511467879-K5J9BYNACHJVDV3BNSFU/Aro+Ha_0387+1.jpg&quot;,
-&quot;contentType&quot;: &quot;image/jpeg&quot;,
-&quot;items&quot;: [ ],
-&quot;pushedServices&quot;: { },
-&quot;pendingPushedServices&quot;: { },
-&quot;recordTypeLabel&quot;: &quot;image&quot;,
-&quot;originalSize&quot;: &quot;2500x1643&quot;
-}
-}, {
-&quot;title&quot;: &quot;“Talk about a carpet revival. We were going to replace the carpet but you worked magic and it looks like  brand new. Thank you so much Rent Ready!&quot;,
-&quot;description&quot;: &quot;&lt;p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;&gt;Property Manager&lt;br&gt;Durham, NC&lt;\/p&gt;&quot;,
-&quot;button&quot;: {
-&quot;buttonText&quot;: &quot;Make It&quot;
-},
-&quot;mediaFocalPoint&quot;: {
-&quot;x&quot;: 0.5092250922509225,
-&quot;y&quot;: 0.3113513513513514
-},
-&quot;imageId&quot;: &quot;65eeaef0494604497505a5a8&quot;,
-&quot;image&quot;: {
-&quot;id&quot;: &quot;65eeaef0494604497505a5a8&quot;,
-&quot;recordType&quot;: 2,
-&quot;addedOn&quot;: 1618511743320,
-&quot;updatedOn&quot;: 1618512009090,
-&quot;starred&quot;: false,
-&quot;passthrough&quot;: false,
-&quot;workflowState&quot;: 1,
-&quot;publishOn&quot;: 1618511743320,
-&quot;authorId&quot;: &quot;65ccc9348a71e5742a98e917&quot;,
-&quot;systemDataId&quot;: &quot;1618511743693-J3A8OYH6X8C7RXNU5K0J&quot;,
-&quot;systemDataVariants&quot;: &quot;2500x1599,100w,300w,500w,750w,1000w,1500w,2500w&quot;,
-&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
-&quot;filename&quot;: &quot;20140301_Trade 151_0124 1.jpg&quot;,
-&quot;mediaFocalPoint&quot;: {
-&quot;x&quot;: 0.5,
-&quot;y&quot;: 0.5,
-&quot;source&quot;: 3
-},
-&quot;colorData&quot;: {
-&quot;topLeftAverage&quot;: &quot;e5edf3&quot;,
-&quot;topRightAverage&quot;: &quot;edf1f2&quot;,
-&quot;bottomLeftAverage&quot;: &quot;4f878b&quot;,
-&quot;bottomRightAverage&quot;: &quot;838977&quot;,
-&quot;centerAverage&quot;: &quot;d2dbe4&quot;,
-&quot;suggestedBgColor&quot;: &quot;e9f2f9&quot;
-},
-&quot;urlId&quot;: &quot;vou4um5zkkdl843qfbhocs8yvo4wu0-ra4tc-k9rfd&quot;,
-&quot;title&quot;: &quot;&quot;,
-&quot;body&quot;: null,
-&quot;likeCount&quot;: 0,
-&quot;commentCount&quot;: 0,
-&quot;publicCommentCount&quot;: 0,
-&quot;commentState&quot;: 2,
-&quot;unsaved&quot;: false,
-&quot;author&quot;: {
-&quot;id&quot;: &quot;65ccc9348a71e5742a98e917&quot;,
-&quot;displayName&quot;: &quot;Ekaterina Trushina&quot;,
-&quot;firstName&quot;: &quot;Ekaterina&quot;,
-&quot;lastName&quot;: &quot;Trushina&quot;,
-&quot;bio&quot;: &quot;&quot;
-},
-&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618511743693-J3A8OYH6X8C7RXNU5K0J/20140301_Trade+151_0124+1.jpg&quot;,
-&quot;contentType&quot;: &quot;image/jpeg&quot;,
-&quot;items&quot;: [ ],
-&quot;pushedServices&quot;: { },
-&quot;pendingPushedServices&quot;: { },
-&quot;recordTypeLabel&quot;: &quot;image&quot;,
-&quot;originalSize&quot;: &quot;2500x1599&quot;
-}
-}, {
-&quot;title&quot;: &quot;“He knocked this repair out of the park! You know you got a good repair job when you can&#39;t find it.\&quot;&quot;,
-&quot;description&quot;: &quot;&lt;p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;&gt;Community Maintenance Manager&lt;br&gt;Charlotte, NC&lt;\/p&gt;&quot;,
-&quot;button&quot;: {
-&quot;buttonText&quot;: &quot;Make It&quot;
-},
-&quot;mediaFocalPoint&quot;: {
-&quot;x&quot;: 0.5,
-&quot;y&quot;: 0.5
-},
-&quot;imageId&quot;: &quot;65eeaef0494604497505a5a2&quot;,
-&quot;image&quot;: {
-&quot;id&quot;: &quot;65eeaef0494604497505a5a2&quot;,
-&quot;recordType&quot;: 2,
-&quot;addedOn&quot;: 1618511437285,
-&quot;updatedOn&quot;: 1618512009081,
-&quot;starred&quot;: false,
-&quot;passthrough&quot;: false,
-&quot;workflowState&quot;: 1,
-&quot;publishOn&quot;: 1618511437285,
-&quot;authorId&quot;: &quot;65ccc9348a71e5742a98e917&quot;,
-&quot;systemDataId&quot;: &quot;1618511440608-5BVMHVN4WR2I9YQV1WWR&quot;,
-&quot;systemDataVariants&quot;: &quot;2500x1658,100w,300w,500w,750w,1000w,1500w,2500w&quot;,
-&quot;systemDataSourceType&quot;: &quot;JPG&quot;,
-&quot;filename&quot;: &quot;Aro Ha_0010 1.jpg&quot;,
-&quot;mediaFocalPoint&quot;: {
-&quot;x&quot;: 0.5,
-&quot;y&quot;: 0.5,
-&quot;source&quot;: 3
-},
-&quot;colorData&quot;: {
-&quot;topLeftAverage&quot;: &quot;cbd9e0&quot;,
-&quot;topRightAverage&quot;: &quot;d3d8dc&quot;,
-&quot;bottomLeftAverage&quot;: &quot;6e5b2b&quot;,
-&quot;bottomRightAverage&quot;: &quot;5f4e29&quot;,
-&quot;centerAverage&quot;: &quot;bdcfd5&quot;,
-&quot;suggestedBgColor&quot;: &quot;c7d6dd&quot;
-},
-&quot;urlId&quot;: &quot;zvgfd0amkuhmnh8lklpautk0xbyz2u-h2p8j-7yma2&quot;,
-&quot;title&quot;: &quot;&quot;,
-&quot;body&quot;: null,
-&quot;likeCount&quot;: 0,
-&quot;commentCount&quot;: 0,
-&quot;publicCommentCount&quot;: 0,
-&quot;commentState&quot;: 2,
-&quot;unsaved&quot;: false,
-&quot;author&quot;: {
-&quot;id&quot;: &quot;65ccc9348a71e5742a98e917&quot;,
-&quot;displayName&quot;: &quot;Ekaterina Trushina&quot;,
-&quot;firstName&quot;: &quot;Ekaterina&quot;,
-&quot;lastName&quot;: &quot;Trushina&quot;,
-&quot;bio&quot;: &quot;&quot;
-},
-&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618511440608-5BVMHVN4WR2I9YQV1WWR/Aro+Ha_0010+1.jpg&quot;,
-&quot;contentType&quot;: &quot;image/jpeg&quot;,
-&quot;items&quot;: [ ],
-&quot;pushedServices&quot;: { },
-&quot;pendingPushedServices&quot;: { },
-&quot;recordTypeLabel&quot;: &quot;image&quot;,
-&quot;originalSize&quot;: &quot;2500x1658&quot;
-}
-} ],
-&quot;styles&quot;: {
-&quot;imageFocalPoint&quot;: {
-&quot;x&quot;: 0.5,
-&quot;y&quot;: 0.5
-},
-&quot;imageOverlayOpacity&quot;: 0.3,
-&quot;backgroundColor&quot;: &quot;white&quot;,
-&quot;sectionTheme&quot;: &quot;black&quot;,
-&quot;imageEffect&quot;: &quot;none&quot;,
-&quot;backgroundMode&quot;: &quot;image&quot;,
-&quot;backgroundImage&quot;: null
-},
-&quot;video&quot;: {
-&quot;filter&quot;: 1,
-&quot;videoFallbackContentItem&quot;: null,
-&quot;nativeVideoContentItem&quot;: null,
-&quot;videoSourceProvider&quot;: &quot;none&quot;
-},
-&quot;backgroundImageFocalPoint&quot;: null,
-&quot;backgroundImageId&quot;: null,
-&quot;options&quot;: {
-&quot;isCardEnabled&quot;: false,
-&quot;isShowAdjacentSlides&quot;: false,
-&quot;isInfiniteEnabled&quot;: true,
-&quot;slideDurationMs&quot;: 1000,
-&quot;isMediaEnabled&quot;: false,
-&quot;isTitleEnabled&quot;: true,
-&quot;isBodyEnabled&quot;: true,
-&quot;isButtonEnabled&quot;: false,
-&quot;layoutWidth&quot;: &quot;full-bleed&quot;,
-&quot;titleAlignment&quot;: &quot;center&quot;,
-&quot;bodyAlignment&quot;: &quot;center&quot;,
-&quot;buttonAlignment&quot;: &quot;center&quot;,
-&quot;cardHorizontalPosition&quot;: &quot;center&quot;,
-&quot;cardVerticalPosition&quot;: &quot;middle&quot;,
-&quot;titleFontSize&quot;: &quot;heading-2&quot;,
-&quot;bodyFontSize&quot;: &quot;paragraph-2&quot;,
-&quot;buttonFontSize&quot;: &quot;button-medium&quot;,
-&quot;customOptions&quot;: {
-&quot;customTitleFontSize&quot;: {
-&quot;value&quot;: 3,
-&quot;unit&quot;: &quot;rem&quot;
-},
-&quot;customBodyFontSize&quot;: {
-&quot;value&quot;: 1.4,
-&quot;unit&quot;: &quot;rem&quot;
-},
-&quot;customButtonFontSize&quot;: {
-&quot;value&quot;: 1.1,
-&quot;unit&quot;: &quot;rem&quot;
-}
-},
-&quot;minSlideHeight&quot;: {
-&quot;value&quot;: 75,
-&quot;unit&quot;: &quot;vh&quot;
-},
-&quot;verticalPaddingTop&quot;: {
-&quot;value&quot;: 3,
-&quot;unit&quot;: &quot;vmax&quot;
-},
-&quot;verticalPaddingBottom&quot;: {
-&quot;value&quot;: 3,
-&quot;unit&quot;: &quot;vmax&quot;
-},
-&quot;slideContentPaddingTop&quot;: {
-&quot;value&quot;: 2,
-&quot;unit&quot;: &quot;%&quot;
-},
-&quot;slideContentPaddingRight&quot;: {
-&quot;value&quot;: 2,
-&quot;unit&quot;: &quot;%&quot;
-},
-&quot;slideContentPaddingBottom&quot;: {
-&quot;value&quot;: 2,
-&quot;unit&quot;: &quot;%&quot;
-},
-&quot;slideContentPaddingLeft&quot;: {
-&quot;value&quot;: 2,
-&quot;unit&quot;: &quot;%&quot;
-},
-&quot;spaceBetweenSlides&quot;: {
-&quot;value&quot;: 0,
-&quot;unit&quot;: &quot;px&quot;
-},
-&quot;spaceBelowTitle&quot;: {
-&quot;value&quot;: 4,
-&quot;unit&quot;: &quot;%&quot;
-},
-&quot;spaceBelowBody&quot;: {
-&quot;value&quot;: 8,
-&quot;unit&quot;: &quot;%&quot;
-},
-&quot;cardPaddingTop&quot;: {
-&quot;value&quot;: 20,
-&quot;unit&quot;: &quot;px&quot;
-},
-&quot;cardPaddingRight&quot;: {
-&quot;value&quot;: 20,
-&quot;unit&quot;: &quot;px&quot;
-},
-&quot;cardPaddingBottom&quot;: {
-&quot;value&quot;: 20,
-&quot;unit&quot;: &quot;px&quot;
-},
-&quot;cardPaddingLeft&quot;: {
-&quot;value&quot;: 20,
-&quot;unit&quot;: &quot;px&quot;
-},
-&quot;navigationOffset&quot;: {
-&quot;value&quot;: 3,
-&quot;unit&quot;: &quot;vw&quot;
-},
-&quot;slideContentWidth&quot;: {
-&quot;value&quot;: 50,
-&quot;unit&quot;: &quot;%&quot;
-},
-&quot;navigationControls&quot;: &quot;arrows&quot;,
-&quot;navigationPlacement&quot;: &quot;center&quot;,
-&quot;navigationAlignment&quot;: &quot;center&quot;,
-&quot;progressIndicators&quot;: &quot;bars&quot;
-},
-&quot;layout&quot;: &quot;banner-slideshow&quot;,
-&quot;isSectionTitleEnabled&quot;: false,
-&quot;sectionTitle&quot;: &quot;&lt;p class=\&quot;\&quot; style=\&quot;white-space:pre-wrap;\&quot;&gt;Make it stand out.&lt;\/p&gt;&quot;,
-&quot;spaceBelowSectionTitle&quot;: {
-&quot;value&quot;: 70,
-&quot;unit&quot;: &quot;px&quot;
-},
-&quot;sectionTitleAlignment&quot;: &quot;center&quot;,
-&quot;isSectionButtonEnabled&quot;: false,
-&quot;sectionButton&quot;: {
-&quot;buttonText&quot;: &quot;Make It&quot;,
-&quot;buttonLink&quot;: &quot;#&quot;,
-&quot;buttonNewWindow&quot;: false
-},
-&quot;sectionButtonSize&quot;: &quot;medium&quot;,
-&quot;sectionButtonAlignment&quot;: &quot;center&quot;,
-&quot;spaceAboveSectionButton&quot;: {
-&quot;value&quot;: 70,
-&quot;unit&quot;: &quot;px&quot;
-}
-}" data-layout-width="full-bleed" data-title-font-unit="rem" data-description-font-unit="rem" data-button-font-unit="rem" data-vertical-padding-top-value="3" data-vertical-padding-bottom-value="3" data-vertical-padding-top-unit="vmax" data-vertical-padding-bottom-unit="vmax" data-has-multiple-slides="" data-controllers-bound="UserItemsListBannerSlideshow">
+  " data-controller="UserItemsListBannerSlideshow" data-progress-indicators-placement="" data-is-infinite-enabled="true" data-is-card-enabled="false" data-title-alignment="center" data-body-alignment="center" data-button-alignment="center" data-show-adjacent-slides="false" data-card-vertical-position="middle" data-card-horizontal-position="center" data-navigation-controls="arrows" data-navigation-placement="center" data-navigation-alignment="center" data-space-between-slides-value="0" data-space-between-slides-unit="px" data-section-id="65eeaef0494604497505a5a9" data-current-context="" data-layout-width="full-bleed" data-title-font-unit="rem" data-description-font-unit="rem" data-button-font-unit="rem" data-vertical-padding-top-value="3" data-vertical-padding-bottom-value="3" data-vertical-padding-top-unit="vmax" data-vertical-padding-bottom-unit="vmax" data-has-multiple-slides="" data-controllers-bound="UserItemsListBannerSlideshow">
   <div class="slideshow-wrapper">
 		<div class="slideshow-gutter" tabindex="0">
 			<div class="slideshow-holder">
@@ -6677,4 +6281,44 @@
       div.grammarly-desktop-integration:before {
         content: attr(data-content);
       }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration>
+
+<script>
+    // Get the necessary DOM elements
+    const slideLeft = document.querySelector('.user-items-list-banner-slideshow__arrow-button--left');
+    const slideRight = document.querySelector('.user-items-list-banner-slideshow__arrow-button--right');
+    const slides = document.querySelectorAll('.slide');
+
+    let currentIndex = 0;
+
+    // Function to display the current slide
+    function displaySlide() {
+        slides.forEach((slide, index) => {
+            if (index === currentIndex) {
+                slide.style.transform = 'translate3d(0px, 0px, 0px)';
+                slide.setAttribute('aria-hidden', 'false');
+            } else {
+                slide.style.transform = 'translate3d(-9999px, 0px, 0px)';
+                slide.setAttribute('aria-hidden', 'true');
+            }
+        });
+    }
+
+    // Event listener for the left arrow button
+    slideLeft.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        displaySlide();
+    });
+
+    // Event listener for the right arrow button
+    slideRight.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        displaySlide();
+    });
+
+    // Initialize the first slide
+    displaySlide();
+
+
+</script>
+</html>
