@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class ContactUs extends Resource
@@ -41,6 +42,14 @@ class ContactUs extends Resource
     {
         return [
             ID::make()->sortable(),
+
+            Text::make('first_name'),
+            Text::make('last_name'),
+            Text::make('company'),
+            Text::make('email'),
+            Text::make('phone'),
+            Text::make('topic')->hideFromIndex(),
+
         ];
     }
 
