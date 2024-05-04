@@ -9,14 +9,14 @@ use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Menu extends Resource
+class Benefit extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\Menu>
+     * @var class-string<\App\Models\Benefit>
      */
-    public static $model = \App\Models\Menu::class;
+    public static $model = \App\Models\Benefit::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -45,14 +45,12 @@ class Menu extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('title')->sortable(),
-            Text::make('slug')->sortable(),
+            Text::make('title'),
+            Text::make('description')->hideFromIndex(),
+            Boolean::make('have_buttons'),
 
             Boolean::make('enabled'),
             Number::make('order'),
-
-//            Text::make('created_at')->sortable(),
-//            Text::make('updated_at')->sortable(),
         ];
     }
 
@@ -97,8 +95,6 @@ class Menu extends Resource
      */
     public function actions(NovaRequest $request)
     {
-        return [
-            new Actions\DeleteUserData
-        ];
+        return [];
     }
 }

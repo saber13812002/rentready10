@@ -3,7 +3,9 @@
 namespace App\Nova;
 
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -46,9 +48,10 @@ class Slider extends Resource
             Text::make('title'),
             Text::make('description')->hideFromIndex(),
 //            Text::make('image'),
-            Text::make('have_buttons'),
-            Text::make('enabled'),
-            Text::make('order'),
+            Boolean::make('have_buttons'),
+
+            Boolean::make('enabled'),
+            Number::make('order'),
 
 
             Images::make('Image', 'image')
