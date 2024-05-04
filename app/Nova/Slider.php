@@ -2,10 +2,9 @@
 
 namespace App\Nova;
 
-use Faker\Provider\Text;
-use Illuminate\Http\Request;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Slider extends Resource
@@ -36,7 +35,7 @@ class Slider extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @param NovaRequest $request
      * @return array
      */
     public function fields(NovaRequest $request)
@@ -44,21 +43,29 @@ class Slider extends Resource
         return [
             ID::make()->sortable(),
 
-            \Laravel\Nova\Fields\Text::make('title'),
-            \Laravel\Nova\Fields\Text::make('description')->hideFromIndex(),
-            \Laravel\Nova\Fields\Text::make('image'),
-            \Laravel\Nova\Fields\Text::make('have_buttons'),
-            \Laravel\Nova\Fields\Text::make('enabled'),
-            \Laravel\Nova\Fields\Text::make('order'),
-//            \Laravel\Nova\Fields\Text::make('created_at'),
-//            \Laravel\Nova\Fields\Text::make('updated_at'),
+            Text::make('title'),
+            Text::make('description')->hideFromIndex(),
+//            Text::make('image'),
+            Text::make('have_buttons'),
+            Text::make('enabled'),
+            Text::make('order'),
+
+
+            Images::make('Image', 'image')
+                ->customPropertiesFields([
+                    Text::make('Alt', 'alt'),
+                ]),
+
+
+//            Text::make('created_at'),
+//            Text::make('updated_at'),
         ];
     }
 
     /**
      * Get the cards available for the request.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @param NovaRequest $request
      * @return array
      */
     public function cards(NovaRequest $request)
@@ -69,7 +76,7 @@ class Slider extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @param NovaRequest $request
      * @return array
      */
     public function filters(NovaRequest $request)
@@ -80,7 +87,7 @@ class Slider extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @param NovaRequest $request
      * @return array
      */
     public function lenses(NovaRequest $request)
@@ -91,7 +98,7 @@ class Slider extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @param NovaRequest $request
      * @return array
      */
     public function actions(NovaRequest $request)
