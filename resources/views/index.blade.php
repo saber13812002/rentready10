@@ -1244,7 +1244,7 @@
   display: grid;
   position: relative;
   grid-area: 1/1/-1/-1;
-  grid-template-rows: repeat(13,minmax(24px, auto));
+  /*grid-template-rows: repeat(13,minmax(24px, auto));*/
   grid-template-columns:
     minmax(var(--grid-gutter), 1fr)
     repeat(8, minmax(0, var(--cell-max-width)))
@@ -3364,6 +3364,12 @@
     const slideRight = document.querySelector('.user-items-list-banner-slideshow__arrow-button--right');
     const slides = document.querySelectorAll('.slide');
 
+
+    // Get the necessary DOM elements
+    // const slideLeftM = document.querySelector('.mobile-arrow-button mobile-arrow-button--left');
+    // const slideRightM = document.querySelector('.mobile-arrow-button mobile-arrow-button--right');
+    // const slidesM = document.querySelectorAll('.slide');
+
     let currentIndex = 0;
 
     // Function to display the current slide
@@ -3390,7 +3396,23 @@
         currentIndex = (currentIndex + 1) % slides.length;
         displaySlide();
     });
+    // Event listener for the left arrow button
+    // slideLeftM.addEventListener('click', () => {
+    //     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    //     displaySlide();
+    // });
+
+    // Event listener for the right arrow button
+    // slideRightM.addEventListener('click', () => {
+    //     currentIndex = (currentIndex + 1) % slides.length;
+    //     displaySlide();
+    // });
 
     // Initialize the first slide
-    displaySlide();</script>
+    displaySlide();
+
+
+
+
+    </script>
 </html>
