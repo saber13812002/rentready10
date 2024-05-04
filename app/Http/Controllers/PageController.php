@@ -73,8 +73,16 @@ class PageController extends Controller
      */
     public function company()
     {
+        $options = (new OptionRepository())->getEnabled();
+
         $menus = (new MenuController)->index();
-        return view('company', compact('menus'));
+        $footers = (new FooterRepository())->getEnabled();
+
+        return view('company', compact(
+            'menus',
+            'options',
+            'footers'
+        ));
     }
 
 
