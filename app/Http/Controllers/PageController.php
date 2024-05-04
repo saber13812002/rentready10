@@ -51,10 +51,17 @@ class PageController extends Controller
      */
     public function solutions()
     {
+        $options = (new OptionRepository())->getEnabled();
         $menus = (new MenuController)->index();
         $solutions = Solution::all();
+        $footers = (new FooterRepository())->getEnabled();
 
-        return view('solutions', compact('menus', 'solutions'));
+        return view('solutions', compact(
+            'menus',
+            'options',
+            'footers',
+            'solutions'
+        ));
     }
 
 
