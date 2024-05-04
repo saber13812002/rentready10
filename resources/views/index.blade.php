@@ -5417,6 +5417,7 @@
 
         @if(true)
 
+
 <section data-test="page-section" data-section-theme="black" class="page-section
 
       user-items-list-section
@@ -5587,183 +5588,16 @@
 
         ">
 
-
-            <li class="
-                slide
-                list-item
-              " style="padding: 2%; transform: translate3d(0px, 0px, 0px);" data-is-card-enabled="false">
-
-              <div class="slide-content list-item-card-background
-      " style="
-
-
-
-      width: 350px;
-      min-width: 50%;
-
-    max-width: 100%;
-    ">
-
-    <h2 class="list-item-content__title preSlide" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.361364s;">"Turns just got a lot easier with this new turn board system! I can schedule all my turns in a matter of minutes - this is exciting."</h2>
-
-
-
-    <div class="list-item-content__description
-
-
-      " style="margin-top: 4%;">
-      <p class="preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.368182s;">Property Manager<br>Raleigh, NC</p>
-    </div>
-
-
-
-</div>
-
-  					</li>
-
-
-            <li class="
-                slide
-                list-item
-              " style="padding: 2%; transform: translate3d(-9999px, 0px, 0px);" data-is-card-enabled="false" aria-hidden="true">
-
-
-
-              <div class="slide-content list-item-card-background
-      " style="
-
-
-
-      width: 350px;
-      min-width: 50%;
-
-    max-width: 100%;
-    ">
-
-    <h2 class="list-item-content__title preSlide" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.375s;">"Being able to see real-time updates of service status keeps me and my entire team in the know about our turns - easy as 1, 2, 3."</h2>
-
-
-
-    <div class="list-item-content__description
-
-
-      " style="margin-top: 4%;">
-      <p class="preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.381818s;">Maintenance Manager<br>Atlanta, GA</p>
-    </div>
-
-
-
-</div>
-
-  					</li>
-
-
-            <li class="
-                slide
-                list-item
-              " style="padding: 2%; transform: translate3d(-9999px, 0px, 0px);" data-is-card-enabled="false" aria-hidden="true">
-
-
-
-              <div class="slide-content list-item-card-background
-      " style="
-
-
-
-      width: 350px;
-      min-width: 50%;
-
-    max-width: 100%;
-    ">
-
-    <h2 class="list-item-content__title preSlide" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.388636s;">“This is great! Every property should be using this as their turn board! Throwing the dry erase board away... finally!” </h2>
-
-
-
-    <div class="list-item-content__description
-
-
-      " style="margin-top: 4%;">
-      <p class="preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.395455s;">Property Manager<br>Atlanta, GA</p>
-    </div>
-
-
-
-</div>
-
-  					</li>
-
-
-            <li class="
-                slide
-                list-item
-              " style="padding: 2%; transform: translate3d(-9999px, 0px, 0px);" data-is-card-enabled="false" aria-hidden="true">
-
-
-
-              <div class="slide-content list-item-card-background
-      " style="
-
-
-
-      width: 350px;
-      min-width: 50%;
-
-    max-width: 100%;
-    ">
-
-    <h2 class="list-item-content__title preSlide" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.402273s;">“Talk about a carpet revival. We were going to replace the carpet but you worked magic and it looks like  brand new. Thank you so much Rent Ready!</h2>
-
-
-
-    <div class="list-item-content__description
-
-
-      " style="margin-top: 4%;">
-      <p class="preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.409091s;">Property Manager<br>Durham, NC</p>
-    </div>
-
-
-
-</div>
-
-  					</li>
-
-
-            <li class="
-                slide
-                list-item
-              " style="padding: 2%; transform: translate3d(-1028px, 0px, 0px);" data-is-card-enabled="false" aria-hidden="true">
-
-
-
-              <div class="slide-content list-item-card-background
-      " style="
-
-
-
-      width: 350px;
-      min-width: 50%;
-
-    max-width: 100%;
-    ">
-
-    <h2 class="list-item-content__title preSlide" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.415909s;">“He knocked this repair out of the park! You know you got a good repair job when you can't find it."</h2>
-
-
-
-    <div class="list-item-content__description
-
-
-      " style="margin-top: 4%;">
-      <p class="preFade" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.422727s;">Community Maintenance Manager<br>Charlotte, NC</p>
-    </div>
-
-
-
-</div>
-
-  					</li>
+                    @foreach ($quotes as $quote)
+                        <li class="slide list-item" style="padding: 2%;" data-is-card-enabled="false">
+                            <div class="slide-content list-item-card-background" style="width: 350px; min-width: 50%; max-width: 100%;">
+                                <h2 class="list-item-content__title preSlide slideIn" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.304615s;">{{ $quote->content }}</h2>
+                                <div class="list-item-content__description" style="margin-top: 4%;">
+                                    <p class="preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.313846s;">{{ $quote->author }}<br>{{ $quote->location }}</p>
+                                </div>
+                            </div>
+                        </li>
+                    @endforeach
 
 				</ul>
 			</div>

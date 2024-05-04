@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Menu;
-use App\Models\Page;
 use App\Http\Requests\StorePageRequest;
 use App\Http\Requests\UpdatePageRequest;
-use App\Models\Slider;
+use App\Models\Page;
+use App\Models\Quote;
 use App\Models\Solution;
 use App\Repositories\BenefitRepository;
 use App\Repositories\FooterRepository;
@@ -32,11 +31,14 @@ class PageController extends Controller
 //        dd($benefits[0]['title']);
         $footers = (new FooterRepository())->getEnabled();
 //        dd($menu);
+        $quotes = Quote::all();
+//        dd($quotes);
         return view('index', compact(
             'menus',
             'sliders',
             'options',
             'benefits',
+            'quotes',
             'footers'
         ));
     }
