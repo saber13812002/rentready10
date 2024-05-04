@@ -2,19 +2,21 @@
 
 namespace App\Repositories;
 
-use App\Models\Option;
+use App\Models\Quote;
 use Illuminate\Support\Facades\Cache;
 
-class OptionRepository
+class QuoteRepository
 {
     public function __construct()
     {
+        //
     }
+
 
     public static function getEnabled()
     {
-        return Cache::rememberForever('options',function (){
-            return Option::query()->get()->pluck('value','key')->toArray();
+        return Cache::rememberForever('quotas', function () {
+            return Quote::query()->whereEnabled(1)->get();
         });
     }
 }

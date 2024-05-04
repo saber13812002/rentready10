@@ -11,6 +11,7 @@ use App\Repositories\BenefitRepository;
 use App\Repositories\FooterRepository;
 use App\Repositories\MenuRepository;
 use App\Repositories\OptionRepository;
+use App\Repositories\QuoteRepository;
 use App\Repositories\SliderRepository;
 
 class PageController extends Controller
@@ -31,7 +32,7 @@ class PageController extends Controller
 //        dd($benefits[0]['title']);
         $footers = (new FooterRepository())->getEnabled();
 //        dd($menu);
-        $quotes = Quote::all();
+        $quotes = (new QuoteRepository())->getEnabled();
 //        dd($quotes);
         return view('index', compact(
             'menus',
