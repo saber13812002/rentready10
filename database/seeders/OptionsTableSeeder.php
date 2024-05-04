@@ -51,6 +51,14 @@ class OptionsTableSeeder extends Seeder
                 'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-02 16:30:03',
             ),
+            4 => 
+            array (
+                'id' => 5,
+                'key' => 'why',
+                'value' => 'igital turn board automates service scheduling with Rent Ready\'s Vendor Network, helping shave days off your turns so you can pigital turn board automates service scheduling with Rent Ready\'s Vendor Network, helping shave days off your turns so you can p',
+                'created_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-02 16:30:03',
+            ),
         ));
         
         
