@@ -59,6 +59,38 @@ class OptionsTableSeeder extends Seeder
                 'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-02 16:30:03',
             ),
+            5 => 
+            array (
+                'id' => 6,
+                'key' => 'about_us',
+                'value' => 'WG was created to solve the frustrations multifamily portfolios face getting vacant units ready for new residents. Combining an easy-to-use online software platform with a managed network of vendors, Rent Ready allows multifamily owners and operators to a',
+                'created_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-02 16:30:03',
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'key' => 'ceo_word',
+                'value' => 'We’re a passionate, hardworking group that cares about making the lives of our customers and pros easier. We set high standards, and relentlessly motivate each other in pursuit our goals...',
+                'created_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-02 16:30:03',
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'key' => 'ceo_title',
+                'value' => 's— J.K, Co-Founder & CEO...',
+                'created_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-04 21:19:45',
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'key' => 'discover_more',
+                'value' => 'Explore how WG empowers multifamily owners and operators to streamline vendor scheduling, monitor make ready progress, simplify vendor payments, and optimize quality control....',
+                'created_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-02 16:30:03',
+            ),
         ));
         
         
