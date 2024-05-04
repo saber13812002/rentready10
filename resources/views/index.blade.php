@@ -1628,7 +1628,7 @@
 
 
 
-            <img data-stretch="false" data-src="{{ $slider->image }}" data-image="{{ $slider->image }}" data-image-dimensions="4560x2452" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/Frame+2856.png" width="4560" height="2452" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 54.166666666666664vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="{{ $slider->image }}?format=100w 100w, {{ $slider->image }}?format=300w 300w, {{ $slider->image }}?format=500w 500w, {{ $slider->image }}?format=750w 750w, {{ $slider->image }}?format=1000w 1000w, {{ $slider->image }}?format=1500w 1500w, {{ $slider->image }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" data-src="{{ $slider->image }}" data-image="{{ $slider->image }}" data-image-dimensions="4560x2452" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="{{ $slider->image }}" width="4560" height="2452" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 54.166666666666664vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="{{ $slider->image }}?format=100w 100w, {{ $slider->image }}?format=300w 300w, {{ $slider->image }}?format=500w 500w, {{ $slider->image }}?format=750w 750w, {{ $slider->image }}?format=1000w 1000w, {{ $slider->image }}?format=1500w 1500w, {{ $slider->image }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3097,7 +3097,7 @@
 
 
 
-            <img data-stretch="false" data-src="{{ $benefits[0]['logo'] }}" data-image="{{ $benefits[0]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Faster Turn Times" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/1.png" width="288" height="288" sizes="(max-width: 640px) 100vw, (max-width: 767px) 25vw, 12.5vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="{{ $benefits[0]['logo'] }}?format=100w 100w, {{ $benefits[0]['logo'] }}?format=300w 300w, {{ $benefits[0]['logo'] }}?format=500w 500w, {{ $benefits[0]['logo'] }}?format=750w 750w, {{ $benefits[0]['logo'] }}?format=1000w 1000w, {{ $benefits[0]['logo'] }}?format=1500w 1500w, {{ $benefits[0]['logo'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" data-src="{{ $benefits[0]['logo'] }}" data-image="{{ $benefits[0]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Faster Turn Times" data-load="false" elementtiming="system-image-block" src="{{ $benefits[0]['logo'] }}" width="288" height="288" sizes="(max-width: 640px) 100vw, (max-width: 767px) 25vw, 12.5vw" style="display:block;object-fit: contain; object-position: 50% 50%" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3346,7 +3346,7 @@
 
 
 
-            <img data-stretch="false" crossorigin="" data-src="{{ $benefits[1]['logo'] }}" data-image="{{ $benefits[1]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Lower Costs" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/2.png" width="288" height="288" sizes="100vw" style="display: block; object-fit: cover; object-position: 50% 50%; visibility: hidden;" srcset="{{ $benefits[1]['logo'] }}?format=100w 100w, {{ $benefits[1]['logo'] }}?format=300w 300w, {{ $benefits[1]['logo'] }}?format=500w 500w, {{ $benefits[1]['logo'] }}?format=750w 750w, {{ $benefits[1]['logo'] }}?format=1000w 1000w, {{ $benefits[1]['logo'] }}?format=1500w 1500w, {{ $benefits[1]['logo'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" crossorigin="" data-src="{{ $benefits[1]['logo'] }}" data-image="{{ $benefits[1]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Lower Costs" data-load="false" elementtiming="system-image-block" src="{{ $benefits[1]['logo'] }}" width="288" height="288" sizes="100vw" style="; object-fit: cover; object-position: 50% 50%; ;"  loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3603,7 +3603,7 @@
 
 
 
-            <img data-stretch="false" crossorigin="" data-src="{{ $benefits[2]['logo'] }}" data-image="{{ $benefits[2]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Increased Operating Efficiency" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/3.png" width="288" height="288" sizes="100vw" style="display: block; object-fit: cover; object-position: 50% 50%; visibility: hidden;" srcset="{{ $benefits[2]['logo'] }}?format=100w 100w, {{ $benefits[2]['logo'] }}?format=300w 300w, {{ $benefits[2]['logo'] }}?format=500w 500w, {{ $benefits[2]['logo'] }}?format=750w 750w, {{ $benefits[2]['logo'] }}?format=1000w 1000w, {{ $benefits[2]['logo'] }}?format=1500w 1500w, {{ $benefits[2]['logo'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" crossorigin="" data-src="{{ $benefits[2]['logo'] }}" data-image="{{ $benefits[2]['logo'] }}" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="Increased Operating Efficiency" data-load="false" elementtiming="system-image-block" src="{{ $benefits[2]['logo'] }}" width="288" height="288" sizes="100vw" style="; object-fit: cover; object-position: 50% 50%; ;"  loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3750,7 +3750,7 @@
 
 
 
-            <img data-stretch="false" data-src="{{ $options['benefits_image'] }}" data-image="{{ $options['benefits_image'] }}" data-image-dimensions="2349x1262" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/Group_2772.png" width="2349" height="1262" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 41.66666666666667vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="{{ $options['benefits_image'] }}?format=100w 100w, {{ $options['benefits_image'] }}?format=300w 300w, {{ $options['benefits_image'] }}?format=500w 500w, {{ $options['benefits_image'] }}?format=750w 750w, {{ $options['benefits_image'] }}?format=1000w 1000w, {{ $options['benefits_image'] }}?format=1500w 1500w, {{ $options['benefits_image'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" data-src="{{ $options['benefits_image'] }}" data-image="{{ $options['benefits_image'] }}" data-image-dimensions="2349x1262" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="{{ $options['benefits_image'] }}" width="2349" height="1262" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 41.66666666666667vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="{{ $options['benefits_image'] }}?format=100w 100w, {{ $options['benefits_image'] }}?format=300w 300w, {{ $options['benefits_image'] }}?format=500w 500w, {{ $options['benefits_image'] }}?format=750w 750w, {{ $options['benefits_image'] }}?format=1000w 1000w, {{ $options['benefits_image'] }}?format=1500w 1500w, {{ $options['benefits_image'] }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -3903,14 +3903,28 @@
 
 
 
-</div></div></div><div class="fe-block fe-block-09c6a61e4565f71e8440"><div class="sqs-block button-block sqs-block-button sqs-stretched" data-block-type="53" id="block-09c6a61e4565f71e8440"><div class="sqs-block-content" id="yui_3_17_2_1_1712485179006_212">
+</div>
+                  </div>
+              </div>
+              @if(false)
+              <div class="fe-block fe-block-09c6a61e4565f71e8440">
+                  <div class="sqs-block button-block sqs-block-button sqs-stretched" data-block-type="53" id="block-09c6a61e4565f71e8440">
+                      <div class="sqs-block-content" id="yui_3_17_2_1_1712485179006_212">
 
 <div class="sqs-block-button-container sqs-block-button-container--center preSlide" data-animation-role="button" data-alignment="center" data-button-size="large" data-button-type="secondary" id="yui_3_17_2_1_1712485179006_211" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.245455s;">
   <a href="/book-a-demo" class="sqs-block-button-element--large sqs-button-element--secondary sqs-block-button-element" data-initialized="true">
     Schedule a Demo
   </a>
 </div>
-</div></div></div></div></div>
+</div>
+                  </div>
+              </div>
+
+              @endif
+
+          </div>
+
+      </div>
     </div>
 
   </div>
@@ -4769,7 +4783,7 @@
 
 
 
-            <img data-stretch="false" crossorigin="" data-src="/storage/assets/img/logo/1.png" data-image="/storage/assets/img/logo/1.png" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/1(1).png" width="288" height="288" sizes="100vw" style="display: block; object-fit: cover; object-position: 50% 50%; visibility: hidden;" srcset="/storage/assets/img/logo/1.png?format=100w 100w, /storage/assets/img/logo/1.png?format=300w 300w, /storage/assets/img/logo/1.png?format=500w 500w, /storage/assets/img/logo/1.png?format=750w 750w, /storage/assets/img/logo/1.png?format=1000w 1000w, /storage/assets/img/logo/1.png?format=1500w 1500w, /storage/assets/img/logo/1.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" crossorigin="" data-src="/storage/assets/img/logo/1.png" data-image="/storage/assets/img/logo/1.png" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/1.png" width="288" height="288" sizes="100vw" style="display: block; object-fit: cover; object-position: 50% 50%; visibility: hidden;" srcset="/storage/assets/img/logo/1.png?format=100w 100w, /storage/assets/img/logo/1.png?format=300w 300w, /storage/assets/img/logo/1.png?format=500w 500w, /storage/assets/img/logo/1.png?format=750w 750w, /storage/assets/img/logo/1.png?format=1000w 1000w, /storage/assets/img/logo/1.png?format=1500w 1500w, /storage/assets/img/logo/1.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
@@ -5175,7 +5189,7 @@
 
 
 
-            <img data-stretch="false" data-src="/storage/assets/img/logo/3.png" data-image="/storage/assets/img/logo/3.png" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Rent Ready_files/3(1).png" width="288" height="288" sizes="(max-width: 640px) 100vw, (max-width: 767px) 25vw, 12.5vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="/storage/assets/img/logo/3.png?format=100w 100w, /storage/assets/img/logo/3.png?format=300w 300w, /storage/assets/img/logo/3.png?format=500w 500w, /storage/assets/img/logo/3.png?format=750w 750w, /storage/assets/img/logo/3.png?format=1000w 1000w, /storage/assets/img/logo/3.png?format=1500w 1500w, /storage/assets/img/logo/3.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" data-src="/storage/assets/img/logo/3.png" data-image="/storage/assets/img/logo/3.png" data-image-dimensions="288x288" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/img/logo/3.png" width="288" height="288" sizes="(max-width: 640px) 100vw, (max-width: 767px) 25vw, 12.5vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="/storage/assets/img/logo/3.png?format=100w 100w, /storage/assets/img/logo/3.png?format=300w 300w, /storage/assets/img/logo/3.png?format=500w 500w, /storage/assets/img/logo/3.png?format=750w 750w, /storage/assets/img/logo/3.png?format=1000w 1000w, /storage/assets/img/logo/3.png?format=1500w 1500w, /storage/assets/img/logo/3.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
