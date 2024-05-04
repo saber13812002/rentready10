@@ -3,8 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\App;
 
 class DatabaseSeeder extends Seeder
 {
@@ -25,5 +27,7 @@ class DatabaseSeeder extends Seeder
         $this->call(FootersTableSeeder::class);
         $this->call(OptionsTableSeeder::class);
         $this->call(BenefitsTableSeeder::class);
+        if (App::environment('local'))
+            $this->call(UsersTableSeeder::class);
     }
 }
