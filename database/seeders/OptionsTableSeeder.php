@@ -87,9 +87,17 @@ class OptionsTableSeeder extends Seeder
             array (
                 'id' => 9,
                 'key' => 'discover_more',
-                'value' => 'Explore how WG empowers multifamily owners and operators to streamline vendor scheduling, monitor make ready progress, simplify vendor payments, and optimize quality control....',
+                'value' => 'Explore how WG empowers multifamily owners and operators to streamline vendor scheduling, monitor make ready progress, simplify vendor payments, and optimize quality control....--',
                 'created_at' => '2024-05-02 16:30:03',
-                'updated_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-04 21:33:31',
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'key' => 'solutions_title',
+                'value' => 'solution title is some words that appear in solution page..',
+                'created_at' => NULL,
+                'updated_at' => '2024-05-04 21:35:00',
             ),
         ));
         
