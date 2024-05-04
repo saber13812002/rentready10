@@ -12,3 +12,5 @@ Route::get('/company', [PageController::class, 'company']);
 Route::get('/contact-us', [PageController::class, 'contact']);
 Route::get('/privacy-policy', [PageController::class, 'privacy']);
 Route::get('/terms-of-use', [PageController::class, 'terms']);
+
+Route::post('/contact-us', [PageController::class, 'submitForm'])->name('submit-form');

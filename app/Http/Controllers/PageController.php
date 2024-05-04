@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePageRequest;
 use App\Http\Requests\UpdatePageRequest;
+use App\Models\ContactUs;
 use App\Models\Page;
-use App\Models\Quote;
 use App\Models\Solution;
 use App\Repositories\BenefitRepository;
 use App\Repositories\FooterRepository;
@@ -13,6 +13,7 @@ use App\Repositories\MenuRepository;
 use App\Repositories\OptionRepository;
 use App\Repositories\QuoteRepository;
 use App\Repositories\SliderRepository;
+use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
@@ -83,7 +84,11 @@ class PageController extends Controller
     public function contact()
     {
         $menus = (new MenuController)->index();
-        return view('contact', compact('menus'));
+        $footers = (new FooterRepository())->getEnabled();
+        return view('contact', compact(
+            'menus',
+            'footers'
+        ));
     }
 
 
@@ -156,4 +161,29 @@ class PageController extends Controller
     {
         //
     }
+
+
+    public function submitForm(Request $request)
+    {
+//        dd($request);
+        // Validate the form data
+        $validatedData = $request->validate([
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'company' => 'nullable',
+            'phone' => 'required',
+            'email' => 'required|email',
+            'topic' => 'required',
+        ]);
+
+        // Save the form data to the database or perform other actions
+        // ...
+
+        $item = ContactUs::create($validatedData);
+
+
+        // Redirect or return a response
+        return redirect()->back()->with('success', 'Form submitted successfully.');
+    }
+
 }
