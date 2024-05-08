@@ -582,7 +582,7 @@
                       <div class="header-title-logo">
                         <a href="/" data-animation-role="header-element" class="preSlide slideIn" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.00594059s;">
 
-<img elementtiming="nbf-header-logo-desktop" src="/storage/assets/Company — Rent Ready_files/RR-logo-white.png" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
+<img elementtiming="nbf-header-logo-desktop" src="{{ $footers->logo }}" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
 
                         </a>
                       </div>
@@ -737,7 +737,7 @@
                       <div class="header-title-logo">
                         <a href="/" data-animation-role="header-element" class="preSlide" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.0534653s;">
 
-<img elementtiming="nbf-header-logo-desktop" src="/storage/assets/Company — Rent Ready_files/RR-logo-white.png" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
+<img elementtiming="nbf-header-logo-desktop" src="{{ $footers->logo }}" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
 
                         </a>
                       </div>
@@ -1826,7 +1826,7 @@
 
 
 
-            <img data-stretch="false" data-src="/storage/assets/Company — Rent Ready_filesTable.png" data-image="/storage/assets/Company — Rent Ready_filesTable.png" data-image-dimensions="7120x2292" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Company — Rent Ready_files/Table.png" width="7120" height="2292" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="/storage/assets/Company — Rent Ready_filesTable.png?format=100w 100w, /storage/assets/Company — Rent Ready_filesTable.png?format=300w 300w, /storage/assets/Company — Rent Ready_filesTable.png?format=500w 500w, /storage/assets/Company — Rent Ready_filesTable.png?format=750w 750w, /storage/assets/Company — Rent Ready_filesTable.png?format=1000w 1000w, /storage/assets/Company — Rent Ready_filesTable.png?format=1500w 1500w, /storage/assets/Company — Rent Ready_filesTable.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" data-src="/storage/assets/Company — Rent Ready_files/Table.png" data-image="/storage/assets/Company — Rent Ready_files/Table.png" data-image-dimensions="7120x2292" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Company — Rent Ready_files/Table.png" width="7120" height="2292" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="/storage/assets/Company — Rent Ready_files/Table.png?format=100w 100w, /storage/assets/Company — Rent Ready_files/Table.png?format=300w 300w, /storage/assets/Company — Rent Ready_files/Table.png?format=500w 500w, /storage/assets/Company — Rent Ready_files/Table.png?format=750w 750w, /storage/assets/Company — Rent Ready_files/Table.png?format=1000w 1000w, /storage/assets/Company — Rent Ready_files/Table.png?format=1500w 1500w, /storage/assets/Company — Rent Ready_files/Table.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 

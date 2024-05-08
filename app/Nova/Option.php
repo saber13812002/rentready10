@@ -43,7 +43,9 @@ class Option extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('key'),
+            Text::make('key')->withMeta(['extraAttributes' => [
+                'readonly' => true
+            ]]),
             Text::make('value')->rules('max:255')->displayUsing(function ($text) {
                 if (strlen($text) > 60) {
                     return substr($text, 0, 60) . '...';

@@ -464,7 +464,7 @@
                       <div class="header-title-logo">
                         <a href="/" data-animation-role="header-element" class="preSlide slideIn" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.00681818s;">
 
-<img elementtiming="nbf-header-logo-desktop" src="/storage/assets/Rent Ready_files/RR-logo-white.png" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
+<img elementtiming="nbf-header-logo-desktop" src="{{ $footers->logo }}" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
 
                         </a>
                       </div>
@@ -516,7 +516,7 @@
                       <div class="header-title-logo">
                         <a href="/" data-animation-role="header-element" class="preSlide" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.0613636s;">
 
-<img elementtiming="nbf-header-logo-desktop" src="/storage/assets/Rent Ready_files/RR-logo-white.png" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
+<img elementtiming="nbf-header-logo-desktop" src="{{ $footers->logo }}" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
 
                         </a>
                       </div>
