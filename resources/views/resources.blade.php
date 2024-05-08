@@ -582,7 +582,7 @@
                       <div class="header-title-logo">
                         <a href="/" data-animation-role="header-element" class="preSlide slideIn" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.00594059s;">
 
-<img elementtiming="nbf-header-logo-desktop" src="/storage/assets/Resources — Rent Ready_files/RR-logo-white.png" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
+<img elementtiming="nbf-header-logo-desktop" src="{{ $footers->logo }}" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
 
                         </a>
                       </div>
@@ -737,7 +737,7 @@
                       <div class="header-title-logo">
                         <a href="/" data-animation-role="header-element" class="preSlide" style="transition-timing-function: ease; transition-duration: 0.45s; transition-delay: 0.0534653s;">
 
-<img elementtiming="nbf-header-logo-desktop" src="/storage/assets/Resources — Rent Ready_files/RR-logo-white.png" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
+<img elementtiming="nbf-header-logo-desktop" src="{{ $footers->logo }}" alt="Rent Ready" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
 
                         </a>
                       </div>
@@ -5355,7 +5355,7 @@
 
 
 
-            <img data-stretch="false" data-src="/storage/assets/img/RR-logo-white.png" data-image="/storage/assets/img/RR-logo-white.png" data-image-dimensions="1600x795" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Resources — Rent Ready_files/RR-logo-white(1).png" width="1600" height="795" sizes="(max-width: 640px) 100vw, (max-width: 767px) 37.5vw, 16.666666666666664vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="/storage/assets/img/RR-logo-white.png?format=100w 100w, /storage/assets/img/RR-logo-white.png?format=300w 300w, /storage/assets/img/RR-logo-white.png?format=500w 500w, /storage/assets/img/RR-logo-white.png?format=750w 750w, /storage/assets/img/RR-logo-white.png?format=1000w 1000w, /storage/assets/img/RR-logo-white.png?format=1500w 1500w, /storage/assets/img/RR-logo-white.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+            <img data-stretch="false" data-src="{{ $footers->logo }}" data-image="{{ $footers->logo }}" data-image-dimensions="1600x795" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="/storage/assets/Resources — Rent Ready_files/RR-logo-white(1).png" width="1600" height="795" sizes="(max-width: 640px) 100vw, (max-width: 767px) 37.5vw, 16.666666666666664vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="{{ $footers->logo }}?format=100w 100w, {{ $footers->logo }}?format=300w 300w, {{ $footers->logo }}?format=500w 500w, {{ $footers->logo }}?format=750w 750w, {{ $footers->logo }}?format=1000w 1000w, {{ $footers->logo }}?format=1500w 1500w, {{ $footers->logo }}?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
 
 
 
