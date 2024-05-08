@@ -30,6 +30,7 @@ class CacheForget extends Command
         Cache::forget('sliders');
         Cache::forget('footers');
         Cache::forget('benefits');
+        Cache::forget('quotas');
         Cache::forget('options');
 
         $this->info('done');
