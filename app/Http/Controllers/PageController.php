@@ -41,7 +41,7 @@ class PageController extends Controller
             'options',
             'benefits',
             'quotes',
-            'footers'
+            'footers',
         ));
     }
 
@@ -60,7 +60,7 @@ class PageController extends Controller
             'menus',
             'options',
             'footers',
-            'solutions'
+            'solutions',
         ));
     }
 
@@ -70,8 +70,15 @@ class PageController extends Controller
      */
     public function resources()
     {
+        $options = (new OptionRepository())->getEnabled();
         $menus = (new MenuController)->index();
-        return view('resources', compact('menus'));
+        $footers = (new FooterRepository())->getEnabled();
+
+        return view('resources', compact(
+            'menus',
+            'options',
+            'footers',
+        ));
     }
 
 
