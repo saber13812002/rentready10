@@ -24,4 +24,9 @@ class OurService extends Model implements HasMedia
     {
         $this->addMediaCollection('our-service-logo')->singleFile();
     }
+
+    public function getLogoAttribute()
+    {
+        return $this->getFirstMediaUrl('our-service-logo');
+    }
 }
