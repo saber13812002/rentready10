@@ -30,5 +30,6 @@ class DatabaseSeeder extends Seeder
         if (App::environment('local'))
             $this->call(UsersTableSeeder::class);
         $this->call(QuotesTableSeeder::class);
+        $this->call(OurServicesTableSeeder::class);
     }
 }
