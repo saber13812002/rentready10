@@ -30,6 +30,7 @@ class PageController extends Controller
         $menus = (new MenuRepository())->getEnabled();
         $sliders = (new SliderRepository())->getEnabled();
         $benefits = (new BenefitRepository())->getEnabled();
+//        dd($benefits[0]->image);
 //        dd($benefits[0]['title']);
         $footers = (new FooterRepository())->getEnabled();
 //        dd($footers->logo);

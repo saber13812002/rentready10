@@ -2,7 +2,7 @@
 
 namespace App\Nova;
 
-use Illuminate\Http\Request;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
@@ -47,6 +47,11 @@ class Benefit extends Resource
 
             Text::make('title'),
             Text::make('description')->hideFromIndex(),
+
+            Images::make('image', 'benefit-image')
+                ->conversionOnIndexView('thumb') // conversion used to display the image
+                ->rules('required'),
+
             Boolean::make('have_buttons'),
 
             Boolean::make('enabled'),
