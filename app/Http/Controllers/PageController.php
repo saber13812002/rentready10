@@ -32,6 +32,7 @@ class PageController extends Controller
         $benefits = (new BenefitRepository())->getEnabled();
 //        dd($benefits[0]['title']);
         $footers = (new FooterRepository())->getEnabled();
+//        dd($footers->logo);
 //        dd($menu);
         $quotes = (new QuoteRepository())->getEnabled();
 //        dd($quotes);

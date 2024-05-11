@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('linkedin');
             $table->string('facebook');
             $table->string('instagram');
-            $table->string('logo');
+//            $table->string('logo');
 
             $table->boolean('terms_show');
             $table->boolean('privacy_show');

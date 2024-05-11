@@ -27,7 +27,7 @@ class FootersTableSeeder extends Seeder
                 'linkedin' => 'https://www.linkedin.com/company/rent-ready/.',
                 'facebook' => 'https://www.facebook.com/RentReadyApartments/.',
                 'instagram' => 'https://www.instagram.com/rentready/.',
-                'logo' => '{{ $footers->logo }}?format=500w.',
+                //'logo' => '{{ $footers->logo }}?format=500w.',
                 'terms_show' => 1,
                 'privacy_show' => 1,
                 'contact_us_show' => 1,
