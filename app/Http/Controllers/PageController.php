@@ -9,6 +9,7 @@ use App\Models\Page;
 use App\Models\Solution;
 use App\Repositories\BenefitRepository;
 use App\Repositories\FooterRepository;
+use App\Repositories\HowWorkRepository;
 use App\Repositories\MenuRepository;
 use App\Repositories\OptionRepository;
 use App\Repositories\QuoteRepository;
@@ -57,11 +58,16 @@ class PageController extends Controller
         $menus = (new MenuController)->index();
         $solutions = Solution::all();
         $footers = (new FooterRepository())->getEnabled();
+        $how_works = (new HowWorkRepository())->getEnabled();
+//        dd($how_works[0]->image);
+//        dd($how_works[0]->logo);
+//        dd($footers->logo);
 
         return view('solutions', compact(
             'menus',
             'options',
             'footers',
+            'how_works',
             'solutions',
         ));
     }
