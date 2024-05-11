@@ -37,29 +37,13 @@ class OptionsTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'id' => 3,
-                'key' => 'benefits_image',
-                'value' => '/storage/assets/img/Group_2772.png',
-                'created_at' => '2024-05-02 16:30:03',
-                'updated_at' => '2024-05-02 16:30:03',
-            ),
-            3 => 
-            array (
-                'id' => 4,
-                'key' => 'benefits_image2',
-                'value' => '/storage/assets/img/Mask_group.png',
-                'created_at' => '2024-05-02 16:30:03',
-                'updated_at' => '2024-05-02 16:30:03',
-            ),
-            4 => 
-            array (
                 'id' => 5,
                 'key' => 'why',
                 'value' => 'igital turn board automates service scheduling with Rent Ready\'s Vendor Network, helping shave days off your turns so you can pigital turn board automates service scheduling with Rent Ready\'s Vendor Network, helping shave days off your turns so you can p',
                 'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-02 16:30:03',
             ),
-            5 => 
+            3 => 
             array (
                 'id' => 6,
                 'key' => 'about_us',
@@ -67,7 +51,7 @@ class OptionsTableSeeder extends Seeder
                 'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-02 16:30:03',
             ),
-            6 => 
+            4 => 
             array (
                 'id' => 7,
                 'key' => 'ceo_word',
@@ -75,7 +59,7 @@ class OptionsTableSeeder extends Seeder
                 'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-02 16:30:03',
             ),
-            7 => 
+            5 => 
             array (
                 'id' => 8,
                 'key' => 'ceo_title',
@@ -83,7 +67,7 @@ class OptionsTableSeeder extends Seeder
                 'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-04 21:19:45',
             ),
-            8 => 
+            6 => 
             array (
                 'id' => 9,
                 'key' => 'discover_more',
@@ -91,7 +75,7 @@ class OptionsTableSeeder extends Seeder
                 'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-04 21:33:31',
             ),
-            9 => 
+            7 => 
             array (
                 'id' => 10,
                 'key' => 'solutions_title',
