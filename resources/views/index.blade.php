@@ -25,7 +25,7 @@
 
         @include('layouts.menu', compact('menus','footers'))
 
-        {{--        @include('layouts.nav_response', compact('menus','footers'))--}}
+        @include('layouts.nav_response', compact('menus','footers'))
 
         <div class="main-banner-area bg-[#c0d1c0] relative pt-60 md:pt-80 xl:pt-40">
             <div class="container xl:max-w-full 3xl:max-w-[1700px]">
