@@ -23,10 +23,16 @@ class Benefit extends Model implements HasMedia
 
     public function registerMediaCollections(): void
     {
+        $this->addMediaCollection('benefit-logo')->singleFile();
         $this->addMediaCollection('benefit-image')->singleFile();
     }
 
-    public function getImageAttribute()
+    public function getLogoAttribute(): string
+    {
+        return $this->getFirstMediaUrl('benefit-logo');
+    }
+
+    public function getImageAttribute(): string
     {
         return $this->getFirstMediaUrl('benefit-image');
     }

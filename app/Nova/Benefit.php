@@ -48,9 +48,13 @@ class Benefit extends Resource
             Text::make('title'),
             Text::make('description')->hideFromIndex(),
 
-            Images::make('image', 'benefit-image')
+            Images::make('logo', 'benefit-logo')
                 ->conversionOnIndexView('thumb') // conversion used to display the image
                 ->rules('required'),
+
+            Images::make('image', 'benefit-image')
+                ->conversionOnIndexView('thumb') // conversion used to display the image
+                ->rules(''),
 
             Boolean::make('have_buttons'),
 
