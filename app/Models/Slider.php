@@ -22,8 +22,12 @@ class Slider extends Model implements HasMedia
 
     public function registerMediaCollections(): void
     {
-        $this->addMediaCollection('image2')->singleFile();
-//        $this->addMediaCollection('images');
+        $this->addMediaCollection('slider-image')->singleFile();
+    }
+
+    public function getImageAttribute(): string
+    {
+        return $this->getFirstMediaUrl('slider-image');
     }
 
 }
