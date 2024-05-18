@@ -29,6 +29,8 @@ class Footer extends Model implements HasMedia
 
     public function getLogoAttribute()
     {
-        return $this->getFirstMediaUrl('footer-logo');
+        $logoCollectionName = 'footer-logo';
+        return $this->getFirstMediaUrl($logoCollectionName) != "" ? $this->getFirstMediaUrl($logoCollectionName) : "/storage/assets/img/logo/1.png";
+
     }
 }

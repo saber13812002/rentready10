@@ -14,6 +14,7 @@ class Benefit extends Model implements HasMedia
     use InteractsWithMedia;
 
     protected $guarded = [];
+
     public function registerMediaConversions(Media $media = null): void
     {
         $this->addMediaConversion('thumb')
@@ -29,7 +30,9 @@ class Benefit extends Model implements HasMedia
 
     public function getLogoAttribute(): string
     {
-        return $this->getFirstMediaUrl('benefit-logo');
+        $logoCollectionName = 'benefit-logo';
+        return $this->getFirstMediaUrl($logoCollectionName) != "" ? $this->getFirstMediaUrl($logoCollectionName) : "/storage/assets/img/logo/1.png";
+
     }
 
     public function getImageAttribute(): string
