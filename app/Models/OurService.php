@@ -27,6 +27,7 @@ class OurService extends Model implements HasMedia
 
     public function getLogoAttribute()
     {
-        return $this->getFirstMediaUrl('our-service-logo');
+        $logoCollectionName = 'our-service-logo';
+        return $this->getFirstMediaUrl($logoCollectionName) != "" ? $this->getFirstMediaUrl($logoCollectionName) : "/storage/assets/img/logo/1.png";
     }
 }

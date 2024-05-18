@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->string('title');
+            $table->boolean('odd')->default(1);
 
             $table->boolean('enabled')->default(true);
             $table->integer('order')->nullable();

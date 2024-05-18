@@ -49,6 +49,8 @@ class OurService extends Resource
                 ->conversionOnIndexView('thumb') // conversion used to display the image
                 ->rules('required'),
 
+            Boolean::make('odd'),
+
             Text::make('title'),
             Boolean::make('enabled'),
             Number::make('order'),
