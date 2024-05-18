@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePageRequest;
 use App\Http\Requests\UpdatePageRequest;
 use App\Models\ContactUs;
+use App\Models\OurService;
 use App\Models\Page;
 use App\Models\Solution;
 use App\Repositories\BenefitRepository;
@@ -55,10 +56,11 @@ class PageController extends Controller
     public function solutions()
     {
         $options = (new OptionRepository())->getEnabled();
-        $menus = (new MenuController)->index();
+        $menus = (new MenuRepository())->getEnabled();
         $solutions = Solution::all();
         $footers = (new FooterRepository())->getEnabled();
         $how_works = (new HowWorkRepository())->getEnabled();
+        $our_services = OurService::all();
 //        dd($how_works[0]->image);
 //        dd($how_works[0]->logo);
 //        dd($footers->logo);
@@ -66,6 +68,7 @@ class PageController extends Controller
         return view('solutions', compact(
             'menus',
             'options',
+            'our_services',
             'footers',
             'how_works',
             'solutions',
