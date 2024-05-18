@@ -37,6 +37,7 @@ class Benefit extends Model implements HasMedia
 
     public function getImageAttribute(): string
     {
-        return $this->getFirstMediaUrl('benefit-image');
+        $logoCollectionName = 'benefit-image';
+        return $this->getFirstMediaUrl($logoCollectionName) != "" ? $this->getFirstMediaUrl($logoCollectionName) : "/storage/assets/img/Frame_2856.png";
     }
 }
