@@ -25,6 +25,15 @@
  - ```php artisan db:seed```
  - ```php artisan serve```
 
+in local env. when you run db:seed create admin user 
+
+admin user for nova:
+
+```admin@admin.com``` 
+
+password:
+
+```admin```
 
 ## License
 
