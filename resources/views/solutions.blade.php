@@ -89,59 +89,25 @@
         <div
             class="grid md:gap-50 lg:gap-25 xl:gap-50 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
             <div>
-                <div class="relative flex flex-row items-start gap-20 ease-in duration-300 rounded-lg mt-25">
-                    <div class="flex flex-row justify-start items-start pt-10 -z-1 mb-18 md:mb-0">
-                        <img
-                            src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/a2795dca-6eca-4388-b7dc-0b55ec7e25b1/1.png">
+                @foreach($solution_benefits as $benefit)
+                    <div class="relative flex flex-row items-start gap-20 ease-in duration-300 rounded-lg mt-25">
+                        <div class="flex flex-row justify-start items-start pt-10 mb-18 md:mb-0">
+                            <img
+                                src="{{ $benefit->logo }}">
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-22px md:text-28px lg:text-34px mb-8">
+                                {{ $benefit->title }}
+                            </h3>
+                            <p class="leading-7 md:leading-8 text-optional-color mb-10 md:mb-15 text-13px md:text-15px lg:text-16px">{{ $benefit->description }}</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="font-bold text-22px md:text-28px lg:text-34px mb-8">
-                            <a href="blog-details.html"
-                               class="inline-block text-black-color ease-in duration-300">
-                                Faster Turn Times </a>
-                        </h3>
-                        <p class="leading-7 md:leading-8 text-optional-color mb-10 md:mb-15 text-13px md:text-15px lg:text-16px">
-                            Our digital turn board automates service scheduling with Rent Ready's Vendor Network,
-                            helping shave days off your turns so you can put units back on the market faster. </p>
-                    </div>
-                </div>
-                <div class="relative flex flex-row items-start gap-20 ease-in duration-300 rounded-lg mt-25">
-                    <div class="flex flex-row justify-start items-start pt-10 -z-1 mb-18 md:mb-0">
-                        <img
-                            src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/a2795dca-6eca-4388-b7dc-0b55ec7e25b1/1.png">
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-22px md:text-28px lg:text-34px mb-8">
-                            <a href="blog-details.html"
-                               class="inline-block text-black-color ease-in duration-300">
-                                Faster Turn Times </a>
-                        </h3>
-                        <p class="leading-7 md:leading-8 text-optional-color mb-10 md:mb-15 text-13px md:text-15px lg:text-16px">
-                            Our digital turn board automates service scheduling with Rent Ready's Vendor Network,
-                            helping shave days off your turns so you can put units back on the market faster. </p>
-                    </div>
-                </div>
-                <div class="relative flex flex-row items-start gap-20 ease-in duration-300 rounded-lg mt-25">
-                    <div class="flex flex-row justify-start items-start pt-10 -z-1 mb-18 md:mb-0">
-                        <img
-                            src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/a2795dca-6eca-4388-b7dc-0b55ec7e25b1/1.png">
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-22px md:text-28px lg:text-34px mb-8">
-                            <a href="blog-details.html"
-                               class="inline-block text-black-color ease-in duration-300">
-                                Faster Turn Times </a>
-                        </h3>
-                        <p class="leading-7 md:leading-8 text-optional-color mb-10 md:mb-15 text-13px md:text-15px lg:text-16px">
-                            Our digital turn board automates service scheduling with Rent Ready's Vendor Network,
-                            helping shave days off your turns so you can put units back on the market faster. </p>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div>
                 <a href="blog-details.html" class="block">
                     <img
-                        src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/1f25fe2f-dbc8-4124-b880-04b1b1b90caf/Group+2772.png"
+                        src="{{ $solution_benefits[0]->image??"" }}"
                         class="rounded-lg mb-25 inline-block" alt="blog-image">
                 </a>
             </div>

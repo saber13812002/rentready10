@@ -8,6 +8,7 @@ use App\Models\ContactUs;
 use App\Models\OurService;
 use App\Models\Page;
 use App\Models\Solution;
+use App\Models\SolutionBenefit;
 use App\Repositories\BenefitRepository;
 use App\Repositories\FooterRepository;
 use App\Repositories\HowWorkRepository;
@@ -61,6 +62,7 @@ class PageController extends Controller
         $footers = (new FooterRepository())->getEnabled();
         $how_works = (new HowWorkRepository())->getEnabled();
         $our_services = OurService::all();
+        $solution_benefits = SolutionBenefit::all();
 //        dd($how_works[0]->image);
 //        dd($how_works[0]->logo);
 //        dd($footers->logo);
@@ -69,6 +71,7 @@ class PageController extends Controller
             'menus',
             'options',
             'our_services',
+            'solution_benefits',
             'footers',
             'how_works',
             'solutions',
