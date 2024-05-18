@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class BenefitsTableSeeder extends Seeder
+class SolutionBenefitsTableSeeder extends Seeder
 {
 
     /**
@@ -16,9 +16,9 @@ class BenefitsTableSeeder extends Seeder
     {
 
 
-        \DB::table('benefits')->delete();
+        \DB::table('solution_benefits')->delete();
 
-        \DB::table('benefits')->insert(array (
+        \DB::table('solution_benefits')->insert(array (
             0 =>
             array (
                 'id' => 1,
