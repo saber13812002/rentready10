@@ -80,8 +80,32 @@ class OptionsTableSeeder extends Seeder
                 'id' => 10,
                 'key' => 'solutions_title',
                 'value' => 'solution title is some words that appear in solution page..',
-                'created_at' => NULL,
+                'created_at' => '2024-05-02 16:30:03',
                 'updated_at' => '2024-05-04 21:35:00',
+            ),
+            8 => 
+            array (
+                'id' => 11,
+                'key' => 'our_services_title',
+                'value' => 'our services:',
+                'created_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-04 21:33:31',
+            ),
+            9 => 
+            array (
+                'id' => 12,
+                'key' => 'solution_benefits_title',
+                'value' => 'solution benefits title:',
+                'created_at' => '2024-05-02 16:30:03',
+                'updated_at' => '2024-05-04 21:35:00',
+            ),
+            10 => 
+            array (
+                'id' => 13,
+                'key' => 'how_works_title',
+                'value' => 'how its work title:',
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
         ));
         
