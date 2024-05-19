@@ -118,8 +118,9 @@ class PageController extends Controller
      */
     public function contact()
     {
-        $menus = (new MenuController)->index();
+        $menus = (new MenuRepository())->getEnabled();
         $footers = (new FooterRepository())->getEnabled();
+
         return view('contact', compact(
             'menus',
             'footers'
