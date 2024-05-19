@@ -39,6 +39,12 @@ class HowWork extends Model implements HasMedia
     public function getImageAttribute()
     {
         $logoCollectionName = 'how-work-image';
-        return $this->getFirstMediaUrl($logoCollectionName) != "" ? $this->getFirstMediaUrl($logoCollectionName) : "/storage/assets/img/123.png";
+        return $this->getFirstMediaUrl($logoCollectionName) != "" ? $this->getFirstMediaUrl($logoCollectionName) : "/storage/assets/img/" . $this->imageFaker($this->id) . ".png";
+    }
+
+    public function imageFaker($id): string
+    {
+        $remain = $id % 3;
+        return $remain == 1 ? "123" : ($remain == 2 ? "456" : "789");
     }
 }
