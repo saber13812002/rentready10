@@ -14,12 +14,12 @@ class MenusTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('menus')->delete();
-
+        
         \DB::table('menus')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'title' => 'Solutions',
@@ -29,7 +29,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'title' => 'Resources',
@@ -39,17 +39,17 @@ class MenusTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'title' => 'Company',
                 'slug' => 'company',
-                'enabled' => 0,
+                'enabled' => 1,
                 'order' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 4,
                 'title' => 'Contact Us',
@@ -59,7 +59,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            4 =>
+            4 => 
             array (
                 'id' => 5,
                 'title' => 'Privacy Policy',
@@ -69,7 +69,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 6,
                 'title' => 'Terms of Use',
@@ -80,7 +80,7 @@ class MenusTableSeeder extends Seeder
                 'updated_at' => NULL,
             ),
         ));
-
-
+        
+        
     }
 }
