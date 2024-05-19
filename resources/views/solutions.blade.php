@@ -57,7 +57,7 @@
                             alt=""/>
                         <h1 class="font-bold text-14px md:text-15px lg:text-30px">
                             <a href="blog-details.html" class="inline-block text-white ease-in duration-300">
-                               {{ $our_service->title }}
+                                {{ $our_service->title }}
                             </a>
                         </h1>
                     </li>
@@ -115,78 +115,59 @@
     </div>
 </div>
 
+
 <div class="pt-60 md:pt-80 lg:pt-100 pb-60 md:pb-80 lg:pb-100">
-    <!-- Overview Area -->
-    <div class="overview-area relative z-1">
-        <div class="container">
-            <div class="flex flex-row justify-start items-center w-full relative">
-                <div class="overview-image z-1 w-[50%] h-full">
-                    <img
-                        src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/1b39e0e5-ca65-43ea-a36d-f910227c9019/1.png?format=750w 750w"
-                        class="rounded-md wow animate__animated animate__fadeInUp" data-wow-delay=".1s" alt="">
-                </div>
-                <div
-                    class="overview-content w-[50%] flex flex-col justify-center items-center gap-18 self-center lg:relative lg:top-12 xl:top-20">
-                    <img alt=""
-                         src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/4cff5693-8143-4142-927d-85090be599c0/1.png"
-                         class="w-[100px] h-100"/>
-                    <p class="font-bold text-13px md:text-30px lg:text-20px leading-7 md:leading-8 text-optional-color text-center w-[350px]">
-                        The residents' notice to vacate status automatically triggers the turn scheduling process
-                        through
-                        our integration with your property management system.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Overview Area -->
+    @foreach ($how_works as $how_work)
+        @if($loop->iteration % 2 == 0)
 
-    <!-- Overview Area -->
-    <div class="overview-area relative z-1">
-        <div class="container">
-            <div class="flex flex-row justify-start items-center w-full relative">
-                <div
-                    class="overview-content w-[50%] flex flex-col justify-center items-center gap-18 self-center lg:relative lg:top-12 xl:top-20">
-                    <img alt=""
-                         src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/4cff5693-8143-4142-927d-85090be599c0/1.png"
-                         class="w-[100px] h-100"/>
-                    <p class="font-bold text-13px md:text-30px lg:text-20px leading-7 md:leading-8 text-optional-color text-center w-[350px]">
-                        The residents' notice to vacate status automatically triggers the turn scheduling process
-                        through
-                        our integration with your property management system.</p>
-                </div>
-                <div class="overview-image z-1 w-[50%] h-full">
-                    <img
-                        src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/1b39e0e5-ca65-43ea-a36d-f910227c9019/1.png?format=750w 750w"
-                        class="rounded-md wow animate__animated animate__fadeInUp" data-wow-delay=".1s" alt="">
+            <!-- Overview Area -->
+            <div class="overview-area relative z-1">
+                <div class="container">
+                    <div class="flex flex-row justify-start items-center w-full relative">
+                        <div class="overview-image z-1 w-[50%] h-full">
+                            <img
+                                src="{{ $how_work->image }}"
+                                class="rounded-md wow animate__animated animate__fadeInUp" data-wow-delay=".1s" alt="">
+                        </div>
+                        <div
+                            class="overview-content w-[50%] flex flex-col justify-center items-center gap-18 self-center lg:relative lg:top-12 xl:top-20">
+                            <img alt=""
+                                  src="{{ $how_work->logo }}"
+                                  class="w-[100px] h-100"/>
+                            <p class="font-bold text-13px md:text-30px lg:text-20px leading-7 md:leading-8 text-optional-color text-center w-[350px]">
+                                {{ $how_work->text }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End Overview Area -->
+            <!-- End Overview Area -->
 
-    <!-- Overview Area -->
-    <div class="overview-area relative z-1">
-        <div class="container">
-            <div class="flex flex-row justify-start items-center w-full relative">
-                <div class="overview-image z-1 w-[50%] h-full">
-                    <img
-                        src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/1b39e0e5-ca65-43ea-a36d-f910227c9019/1.png?format=750w 750w"
-                        class="rounded-md wow animate__animated animate__fadeInUp" data-wow-delay=".1s" alt="">
-                </div>
-                <div
-                    class="overview-content w-[50%] flex flex-col justify-center items-center gap-18 self-center lg:relative lg:top-12 xl:top-20">
-                    <img alt=""
-                         src="https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/4cff5693-8143-4142-927d-85090be599c0/1.png"
-                         class="w-[100px] h-100"/>
-                    <p class="font-bold text-13px md:text-30px lg:text-20px leading-7 md:leading-8 text-optional-color text-center w-[350px]">
-                        The residents' notice to vacate status automatically triggers the turn scheduling process
-                        through
-                        our integration with your property management system.</p>
+        @else
+
+            <!-- Overview Area -->
+            <div class="overview-area relative z-1">
+                <div class="container">
+                    <div class="flex flex-row justify-start items-center w-full relative">
+                        <div
+                            class="overview-content w-[50%] flex flex-col justify-center items-center gap-18 self-center lg:relative lg:top-12 xl:top-20">
+                            <img alt=""
+                                  src="{{ $how_work->logo }}"
+                                  class="w-[100px] h-100"/>
+                            <p class="font-bold text-13px md:text-30px lg:text-20px leading-7 md:leading-8 text-optional-color text-center w-[350px]">
+                                {{ $how_work->text }}</p>
+                        </div>
+                        <div class="overview-image z-1 w-[50%] h-full">
+                            <img
+                                src="{{ $how_work->image }}"
+                                class="rounded-md wow animate__animated animate__fadeInUp" data-wow-delay=".1s" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End Overview Area -->
+            <!-- End Overview Area -->
+        @endif
+    @endforeach
+
 </div>
 
 <div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#c0d1c0] relative z-1">
