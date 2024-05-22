@@ -19,7 +19,7 @@
 </head>
 <body dir="ltr">
 
-<div class="bg-no-repeat bg-cover" style="background-image: url(https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/21d4466d-534f-42ea-839b-0945d97fd85c/321.png)">
+<div class="bg-no-repeat bg-cover" style="background-image: url({{ $backgrounds['company']->image??"" }})">
 
     <div class="main-banner-area relative z-1 pt-60 md:pt-80 xl:pt-40 h-screen" >
 
@@ -51,7 +51,7 @@
     </div>
 </div>
 
-<div class="relative pt-60 md:pt-80 lg:pt-200 pb-60 md:pb-80 lg:pb-200 bg-subscription-bg bg-cover bg-no-repeat bg-center before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:bg-[#c0d1c0] before:opacity-30" style="background-image: url(https://images.squarespace-cdn.com/content/v1/65e8d0f31425f9758c64fabb/77d2395d-044c-4abc-8025-65919b40ff67/000.png);">
+<div class="relative pt-60 md:pt-80 lg:pt-200 pb-60 md:pb-80 lg:pb-200 bg-subscription-bg bg-cover bg-no-repeat bg-center before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:bg-[#c0d1c0] before:opacity-30" style="background-image: url({{ $backgrounds['company']->image??"" }});">
     <div class="container">
         <div class="text-center">
             <h2 class="font-black text-28pxpx md:text-30px lg:text-35px xl:text-65px mb-15 text-white">Discover more about {{ $options['title']??"" }}.</h2>

@@ -5,6 +5,7 @@ namespace App\Nova;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Background extends Resource
@@ -42,6 +43,8 @@ class Background extends Resource
     {
         return [
             ID::make()->sortable(),
+
+            Text::make('key'),
 
             Images::make('image', 'background-image')
                 ->conversionOnIndexView('thumb') // conversion used to display the image
