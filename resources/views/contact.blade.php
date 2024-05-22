@@ -40,50 +40,58 @@
                             <div class="alert alert-success">
                                 {{ session('success') }}
                             </div>
+                        @else
+
+                            <div class="w-full">
+                                <div class="flex flex-row items-center justify-between gap-20 p-20">
+                                    <div class="flex flex-col justify-start items-start w-full">
+                                        <label class="font-bold">First Name</label>
+                                        <input type="text" name="first_name"
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                    </div>
+                                    <div class="flex flex-col justify-start items-start w-full">
+                                        <label class="font-bold">Last Name</label>
+                                        <input type="text" name="last_name"
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                    </div>
+                                </div>
+                                <div class="p-20">
+                                    <label class="font-bold">Company (required)</label>
+                                    <div class="grid gap-20 grid-cols-1 ">
+                                        <input type="text" name="company"
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                    </div>
+                                </div>
+                                <div class="p-20">
+                                    <label class="font-bold">Phone Number (required)</label>
+                                    <div class="grid gap-20 grid-cols-1 ">
+                                        <input type="text" name="phone"
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                    </div>
+                                </div>
+                                <div class="p-20">
+                                    <label class="font-bold">Email (required)</label>
+                                    <div class="grid gap-20 grid-cols-1 ">
+                                        <input type="text" name="email"
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                    </div>
+                                </div>
+                                <div class="p-20">
+                                    <label class="font-bold">Questions? How can we help?</label>
+                                    <div class="grid gap-20 grid-cols-1 ">
+                                        <input type="text" name="topic"
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button type="submit"
+                                    class="inline-block font-semibold text-13px md:text-14px lg:text-15px mt-15 md:mt-25 rounded-xl text-white pt-17 pb-13 pl-35 pr-35 bg-[#14944c] shadow-custom-box-shadow">
+                                Submit
+                            </button>
                         @endif
 
-                        <div class="w-full">
-                            <div class="flex flex-row items-center justify-between gap-20 p-20">
-                                <div class="flex flex-col justify-start items-start w-full">
-                                    <label class="font-bold">First Name</label>
-                                    <input type="text" name="first_name"
-                                           class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
-                                </div>
-                                <div class="flex flex-col justify-start items-start w-full">
-                                    <label class="font-bold">Last Name</label>
-                                    <input type="text" name="last_name"
-                                           class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
-                                </div>
-                            </div>
-                            <div class="p-20">
-                                <label class="font-bold">Company (required)</label>
-                                <div class="grid gap-20 grid-cols-1 ">
-                                    <input type="text" name="company"
-                                           class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
-                                </div>
-                            </div>
-                            <div class="p-20">
-                                <label class="font-bold">Phone Number (required)</label>
-                                <div class="grid gap-20 grid-cols-1 ">
-                                    <input type="text" name="phone"
-                                           class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
-                                </div>
-                            </div>
-                            <div class="p-20">
-                                <label class="font-bold">Email (required)</label>
-                                <div class="grid gap-20 grid-cols-1 ">
-                                    <input type="text" name="email"
-                                           class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
-                                </div>
-                            </div>
-                            <div class="p-20">
-                                <label class="font-bold">Questions? How can we help?</label>
-                                <div class="grid gap-20 grid-cols-1 ">
-                                    <input type="text" name="topic"
-                                           class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
-                                </div>
-                            </div>
-                        </div>
 
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -95,16 +103,6 @@
                             </div>
                         @endif
 
-                        <button type="submit"
-                                class="inline-block font-semibold text-13px md:text-14px lg:text-15px mt-15 md:mt-25 rounded-xl text-white pt-17 pb-13 pl-35 pr-35 bg-[#14944c] shadow-custom-box-shadow">
-                            Submit
-                        </button>
-
-                        @if (session('success'))
-                            <div class="alert alert-success">
-                                {{ session('success') }}
-                            </div>
-                        @endif
 
 
                     </form>
