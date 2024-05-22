@@ -42,7 +42,7 @@
 
 
 <div
-    class="features-area flex flex-row justify-center items-center h-[100vh] pt-30 lg:pt-50 pb-60 md:pb-80 lg:pb-50 relative z-1 bg-cover bg-no-repeat"
+    class="features-area flex flex-row justify-center items-center h-[100vh] pt-30 lg:pt-50 pb-60 md:pb-80 lg:pb-50 relative bg-cover bg-no-repeat"
     style="background-image: url({{ $backgrounds['solutions']->image??"" }})">
     <div class="container">
         <h1 class="font-bold text-center text-25px md:text-40px lg:text-44px xl:text-55px 2xl:text-60px 3xl:text-70px text-white mb-10 md:mb-12 lg:mb-15">
