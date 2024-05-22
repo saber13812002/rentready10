@@ -23,13 +23,13 @@
                         @foreach($menus as $menu)
                             <li class="mr-12 xl:mr-15 relative group">
                                 <a href="/{{ $menu->slug }}"
-                                   class="block text-black-color active font-semibold text-16px ease-in duration-300 relative">{{$menu->title}}</a>
+                                   class="block text-white active font-semibold text-16px ease-in duration-300 relative">{{$menu->title}}</a>
                             </li>
                         @endforeach
                     </ul>
                     <div class="self-center">
                         <a href="contact.html"
-                           class="inline-block font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-white pt-17 pb-13 pl-35 pr-35 bg-[#14944c] shadow-custom-box-shadow hover:shadow-secondary-btn ease-in duration-300">Login</a>
+                           class="inline-block font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-black-color pt-17 pb-13 pl-35 pr-35 bg-[#c0d1c0]">Login</a>
                     </div>
                 </div>
             </nav>

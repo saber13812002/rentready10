@@ -42,11 +42,11 @@
     </div>
 </div>
 
-<div class="pt-60 md:pt-80 lg:pt-100 pb-60 md:pb-80 lg:pb-100 relative">
+<div class="pt-60 md:pt-80 lg:pt-100 pb-60 md:pb-80 lg:pb-100 relative bg-[#01371F]">
     <div class="container">
         <div class="section-title mb-35 md:mb-40 lg:mb-50 text-center">
-            <h2 class="font-bold text-22px md:text-30px lg:text-35px xl:text-40px mb-6 text-black-color">“{{ $options['ceo_word']??"" }}”</h2>
-            <p class="lg:text-16px md:text-15px text-13px lg:max-w-2xl lg:mx-auto leading-7 font-bold md:leading-8 text-optional-color">{{ $options['ceo_title']??"" }}</p>
+            <h2 class="font-bold text-22px md:text-30px lg:text-35px xl:text-40px mb-6 text-white">“{{ $options['ceo_word']??"" }}”</h2>
+            <p class="lg:text-16px md:text-15px text-13px lg:max-w-2xl lg:mx-auto leading-7 font-bold md:leading-8 text-white">{{ $options['ceo_title']??"" }}</p>
         </div>
     </div>
 </div>

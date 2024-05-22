@@ -19,7 +19,7 @@
 </head>
 <body dir="ltr">
 
-<div class="bg-[#c0d1c0]">
+<div class="bg-cover bg-no-repeat" style="background-image: url(/storage/assets/img/WG.png)">
 
     <div class="main-banner-area relative z-1 h-screen">
 
@@ -27,15 +27,15 @@
 
         @include('layouts.nav_response', compact('menus','footers'))
 
-        <div class="main-banner-area bg-[#c0d1c0] relative pt-60 md:pt-80 xl:pt-40">
+        <div class="main-banner-area lg:bg-transparent flex flex-row justify-center items-center h-full relative">
             <div class="container xl:max-w-full 3xl:max-w-[1700px]">
                 @foreach($sliders as $slider)
                     <div
                         class="grid gap-25 md:gap-40 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
                         <div class="main-banner-content self-center md:text-center lg:text-left mb-30">
-                            <h1 class="font-bold text-25px md:text-40px lg:text-44px xl:text-55px 2xl:text-60px 3xl:text-70px text-black-color mb-10 md:mb-12 lg:mb-15">
+                            <h1 class="font-bold text-25px md:text-40px lg:text-68px 2xl:text-60px 3xl:text-70px text-white mb-10 md:mb-12 lg:mb-15">
                                 <strong>{{ $slider->title }}</strong></h1>
-                            <p class="text-13px md:text-15px lg:text-15px xl:text-16px leading-8 text-optional-color md:max-w-[625px] lg:max-w-[100%] xl:max-w-[540px] md:m-auto lg:m-0">
+                            <p class="text-13px md:text-15px lg:text-15px xl:text-30px leading-9 text-white md:max-w-[625px] lg:max-w-[100%] xl:max-w-[540px] md:m-auto lg:m-0">
                                 {{ $slider->description }}</p>
                         </div>
                         <div class="main-banner-image text-center wow animate__animated animate__fadeInUp"
@@ -52,12 +52,12 @@
     </div>
 </div>
 
-<div class="features-area pt-30 lg:pt-50 pb-60 md:pb-80 lg:pb-50 relative bg-[#14944c]">
+<div class="features-area pt-30 lg:pt-50 pb-60 md:pb-80 lg:pb-50 relative bg-[#01371F]">
     <div class="container">
         <div class="section-title md:mb-20 lg:mb-20 text-center">
-            <h2 class="font-black text-22px md:text-30px lg:text-35px xl:text-40px mb-6 text-black-color">
+            <h2 class="font-black text-22px md:text-30px lg:text-35px xl:text-65px mb-6 text-white">
                 Why {{ $options['title']??"" }}?</h2>
-            <p class="lg:text-16px md:text-15px text-13px lg:max-w-2xl lg:mx-auto leading-7 md:leading-8 text-optional-color">
+            <p class="lg:text-30px md:text-15px text-13px lg:max-w-2xl lg:mx-auto leading-7 md:leading-9 text-white">
                 {{ $options['why']??"" }}</p>
         </div>
     </div>
@@ -86,13 +86,13 @@
             <div>
                 <img
                     src="{{ $benefits[0]->image??"" }}"
-                    class="rounded-lg mb-25 inline-block" alt="benefits-image">
+                    class="rounded-lg mb-25 inline-block wow animate__animated animate__fadeInUp" alt="benefits-image" data-wow-delay=".1s">
             </div>
         </div>
     </div>
 </div>
 
-<div class="feedback-area relative pt-60 md:pt-80 lg:pt-100 pb-60 md:pb-80 lg:pb-100 bg-[#14944c]">
+<div class="feedback-area relative pt-60 md:pt-80 lg:pt-100 pb-60 md:pb-80 lg:pb-100 bg-[#01371F]">
     <div
         class="customOne z-0 swiper-button-prev absolute left-0 top-1/2 mt-0 w-42 md:w-50 bg-white shadow-custom-box-shadow3 rounded-full mr-10 opacity-100 h-42 md:h-50 top-0 inline-block after:hidden hover:bg-secondary-gradient-color">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -105,9 +105,9 @@
         <div class="swiper-wrapper">
             @foreach($quotes as $quote)
                 <div class="swiper-slide flex flex-row justify-center items-center text-center">
-                    <div class="single-feedback-box w-[350px]">
+                    <div class="single-feedback-box w-[450px]">
                         <div>
-                            <h1 class="text-[#c1d2c1] font-bold text-28px md:text-28px lg:text-28px leading-7 md:leading-8">
+                            <h1 class="text-[#c1d2c1] font-bold text-28px md:text-60px lg:text- leading-7 md:leading-[5rem]">
                                 "{{ $quote->content }}"</h1>
                             <div class="client-info flex items-center justify-center mt-15 md:mt-20">
                                 <div class="title ml-15 md:ml-20 self-center">
@@ -139,5 +139,6 @@
 <script src="/storage/assets/js/swiper-bundle.min.js"></script>
 <script src="/storage/assets/js/meanmenu.min.js"></script>
 <script src="/storage/assets/js/main.js"></script>
+<script src="/storage/assets/js/wow.min.js"></script>
 </body>
 </html>

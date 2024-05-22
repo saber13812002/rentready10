@@ -2,7 +2,7 @@
 <!-- Navbar for Responsive -->
 <div class="navbar-for-responsive hidden">
     <div class="mean-menu">
-        <ul class="navbar-nav bg-[#14944c]">
+        <ul class="navbar-nav bg-[#01371F]">
 
             @foreach($menus as $menu)
                 <li class="flex flex-row justify-center items-center">

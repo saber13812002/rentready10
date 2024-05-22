@@ -19,7 +19,7 @@
 </head>
 <body dir="ltr">
 
-<div class="bg-[#c0d1c0]">
+<div class="bg-[#01371F]">
     <div class="main-banner-area relative z-1">
 
         @include('layouts.menu', compact('menus','footers'))
@@ -27,11 +27,11 @@
         @include('layouts.nav_response', compact('menus','footers'))
 
 
-        <div class="main-banner-area bg-[#c0d1c0] relative z-1 pt-60 md:pt-80 xl:pt-40">
+        <div class="main-banner-area bg-[#01371F] relative z-1 pt-60 md:pt-80 xl:pt-40">
             <div class="container xl:max-w-full 3xl:max-w-[1700px]">
                 <div class="w-full flex flex-row justify-center items-center">
                     <div class="main-banner-content self-center md:text-center lg:text-left mb-30">
-                        <h1 class="font-bold text-center text-25px md:text-40px lg:text-44px xl:text-55px 2xl:text-60px 3xl:text-70px text-black-color mb-10 md:mb-12 lg:mb-15">
+                        <h1 class="font-bold text-center text-25px md:text-40px lg:text-44px xl:text-55px 2xl:text-60px 3xl:text-70px text-white mb-10 md:mb-12 lg:mb-15">
                             <strong>{{ $options['solutions_title']??"" }}</strong></h1>
                     </div>
                 </div>
@@ -82,9 +82,9 @@
     </div>
 </div>
 
-<div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#c0d1c0] relative z-1">
+<div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#01371F] relative">
     <div class="container">
-        <h1 class="font-bold text-center text-25px md:text-40px lg:text-44px xl:text-55px 2xl:text-60px 3xl:text-70px text-black-color mb-30 md:mb-30 lg:mb-50">
+        <h1 class="font-bold text-center text-25px md:text-40px lg:text-44px xl:text-55px 2xl:text-60px 3xl:text-70px text-white mb-30 md:mb-30 lg:mb-50">
             {{ $options['solution_benefits_title']??"" }}</h1>
         <div
             class="grid md:gap-50 lg:gap-25 xl:gap-50 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
@@ -96,10 +96,10 @@
                                 src="{{ $benefit->logo }}">
                         </div>
                         <div>
-                            <h3 class="font-bold text-22px md:text-28px lg:text-34px mb-8">
+                            <h3 class="font-bold text-22px md:text-28px lg:text-34px mb-8 text-white">
                                 {{ $benefit->title }}
                             </h3>
-                            <p class="leading-7 md:leading-8 text-optional-color mb-10 md:mb-15 text-13px md:text-15px lg:text-16px">{{ $benefit->description }}</p>
+                            <p class="leading-7 md:leading-8 text-white mb-10 md:mb-15 text-13px md:text-15px lg:text-16px">{{ $benefit->description }}</p>
                         </div>
                     </div>
                 @endforeach
@@ -121,10 +121,10 @@
         @if($loop->iteration % 2 == 0)
 
             <!-- Overview Area -->
-            <div class="overview-area relative z-1">
+            <div class="overview-area relative">
                 <div class="container">
                     <div class="flex flex-row justify-start items-center w-full relative">
-                        <div class="overview-image z-1 w-[50%] h-full">
+                        <div class="overview-image w-[50%] h-full">
                             <img
                                 src="{{ $how_work->image }}"
                                 class="rounded-md wow animate__animated animate__fadeInUp" data-wow-delay=".1s" alt="">
@@ -145,7 +145,7 @@
         @else
 
             <!-- Overview Area -->
-            <div class="overview-area relative z-1">
+            <div class="overview-area relative">
                 <div class="container">
                     <div class="flex flex-row justify-start items-center w-full relative">
                         <div
@@ -156,7 +156,7 @@
                             <p class="font-bold text-13px md:text-30px lg:text-20px leading-7 md:leading-8 text-optional-color text-center w-[350px]">
                                 {{ $how_work->text }}</p>
                         </div>
-                        <div class="overview-image z-1 w-[50%] h-full">
+                        <div class="overview-image w-[50%] h-full">
                             <img
                                 src="{{ $how_work->image }}"
                                 class="rounded-md wow animate__animated animate__fadeInUp" data-wow-delay=".1s" alt="">
@@ -170,26 +170,26 @@
 
 </div>
 
-<div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#c0d1c0] relative z-1">
+<div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#01371F] relative">
     <div class="container">
         <div class="text-center xl:ml-auto xl:mr-auto xl:max-w-[1115px]">
-            <h1 class="font-black text-black-color text-25px md:text-40px lg:text-51px xl:text-65px mb-12 md:mb-15 lg:mb-20">
+            <h1 class="font-black text-white text-25px md:text-40px lg:text-51px xl:text-65px mb-12 md:mb-15 lg:mb-20">
                 Ready to Level Up Your Make Ready Process? Let’s Talk.</h1>
             <a href="profile-authentication.html"
-               class="inline-block mt-0 md:mt-5 lg:mt-10 font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-white pt-17 pb-15 pl-35 pr-35 bg-[#14944c] shadow-custom-box-shadow hover:shadow-primary-btn ease-in duration-300">
+               class="inline-block mt-0 md:mt-5 lg:mt-10 font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-black-color pt-17 pb-15 pl-35 pr-35 bg-[#c0d1c0]">
                 Schedule a Call with Sales
             </a>
         </div>
     </div>
 </div>
 
-<div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#c0d1c0] relative z-1">
+<div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#c0d1c0] relative">
     <div class="container">
         <div class="text-center xl:ml-auto xl:mr-auto xl:max-w-[1115px]">
             <h1 class="font-black text-black-color text-25px md:text-40px lg:text-51px xl:text-65px mb-12 md:mb-15 lg:mb-20">
                 Ready to Level Up Your Make Ready Process? Let’s Talk.</h1>
             <a href="profile-authentication.html"
-               class="inline-block mt-0 md:mt-5 lg:mt-10 font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-white pt-17 pb-15 pl-35 pr-35 bg-[#14944c] shadow-custom-box-shadow hover:shadow-primary-btn ease-in duration-300">
+               class="inline-block mt-0 md:mt-5 lg:mt-10 font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-white pt-17 pb-15 pl-35 pr-35 bg-[#01371F]">
                 Schedule a Call with Sales
             </a>
         </div>
