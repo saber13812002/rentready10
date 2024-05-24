@@ -19,7 +19,7 @@
 </head>
 <body dir="ltr">
 
-<div class="bg-cover bg-no-repeat" style="background-image: url(/storage/assets/img/WG.png)">
+<div class="bg-cover bg-no-repeat" style="background-image: url({{ $backgrounds['slider']??"" }})">
 
     <div class="main-banner-area relative z-1 h-fit">
 

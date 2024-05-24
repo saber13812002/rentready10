@@ -33,6 +33,9 @@ class CacheForget extends Command
         Cache::forget('quotas');
         Cache::forget('options');
         Cache::forget('how_works');
+        Cache::forget('backgrounds');
+        Cache::forget('our_services');
+        Cache::forget('solution_benefits');
 
         $this->info('done');
     }

@@ -2,21 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorePageRequest;
-use App\Http\Requests\UpdatePageRequest;
 use App\Models\ContactUs;
-use App\Models\OurService;
-use App\Models\Background;
-use App\Models\Page;
 use App\Models\Solution;
-use App\Models\SolutionBenefit;
+use App\Repositories\BackgroundRepository;
 use App\Repositories\BenefitRepository;
 use App\Repositories\FooterRepository;
 use App\Repositories\HowWorkRepository;
 use App\Repositories\MenuRepository;
 use App\Repositories\OptionRepository;
+use App\Repositories\OurServiceRepository;
 use App\Repositories\QuoteRepository;
 use App\Repositories\SliderRepository;
+use App\Repositories\SolutionBenefitRepository;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -40,11 +37,13 @@ class PageController extends Controller
 //        dd($footers->logo);
 //        dd($menus);
         $quotes = (new QuoteRepository())->getEnabled();
+        $backgrounds = (new BackgroundRepository())->getEnabled();
 //        dd($quotes);
         return view('index', compact(
             'menus',
             'sliders',
             'options',
+            'backgrounds',
             'benefits',
             'quotes',
             'footers',
@@ -62,13 +61,14 @@ class PageController extends Controller
         $solutions = Solution::all();
         $footers = (new FooterRepository())->getEnabled();
         $how_works = (new HowWorkRepository())->getEnabled();
-        $our_services = OurService::all();
-        $backgrounds = Background::all();
-        $solution_benefits = SolutionBenefit::all();
+        $our_services = (new OurServiceRepository())->getEnabled();
+        $backgrounds = (new BackgroundRepository())->getEnabled();
+        $solution_benefits = (new SolutionBenefitRepository())->getEnabled();
 //        dd($how_works[0]->image);
 //        dd($how_works[0]->logo);
 //        dd($footers->logo);
-
+//        dd($backgrounds);
+//['resources']->logo
         return view('solutions', compact(
             'menus',
             'options',
@@ -89,11 +89,13 @@ class PageController extends Controller
     {
         $options = (new OptionRepository())->getEnabled();
         $menus = (new MenuRepository())->getEnabled();
+        $backgrounds = (new BackgroundRepository())->getEnabled();
         $footers = (new FooterRepository())->getEnabled();
 
         return view('resources', compact(
             'menus',
             'options',
+            'backgrounds',
             'footers',
         ));
     }
@@ -106,10 +108,12 @@ class PageController extends Controller
     {
         $options = (new OptionRepository())->getEnabled();
         $menus = (new MenuRepository())->getEnabled();
+        $backgrounds = (new BackgroundRepository())->getEnabled();
         $footers = (new FooterRepository())->getEnabled();
 
         return view('company', compact(
             'menus',
+            'backgrounds',
             'options',
             'footers'
         ));
@@ -122,10 +126,12 @@ class PageController extends Controller
     public function contact()
     {
         $menus = (new MenuRepository())->getEnabled();
+        $backgrounds = (new BackgroundRepository())->getEnabled();
         $footers = (new FooterRepository())->getEnabled();
 
         return view('contact', compact(
             'menus',
+            'backgrounds',
             'footers'
         ));
     }
@@ -136,7 +142,8 @@ class PageController extends Controller
      */
     public function privacy()
     {
-        $menus = (new MenuController)->index();
+        $menus = (new MenuRepository())->getEnabled();
+
         return view('privacy', compact('menus'));
     }
 
@@ -145,60 +152,8 @@ class PageController extends Controller
      */
     public function terms()
     {
-        $menus = (new MenuController)->index();
+        $menus = (new MenuRepository())->getEnabled();
         return view('terms', compact('menus'));
-    }
-
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StorePageRequest $request)
-    {
-        //
-    }
-
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Page $page)
-    {
-        //
-    }
-
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Page $page)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdatePageRequest $request, Page $page)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Page $page)
-    {
-        //
     }
 
 

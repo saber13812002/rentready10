@@ -44,7 +44,9 @@ class Background extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('key'),
+            Text::make('key')->withMeta(['extraAttributes' => [
+                'readonly' => true
+            ]]),
 
             Images::make('image', 'background-image')
                 ->conversionOnIndexView('thumb') // conversion used to display the image
