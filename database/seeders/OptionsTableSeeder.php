@@ -107,6 +107,14 @@ class OptionsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            11 => 
+            array (
+                'id' => 14,
+                'key' => 'title_why',
+                'value' => 'why wg',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         
