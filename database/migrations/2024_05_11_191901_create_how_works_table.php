@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('how_works', function (Blueprint $table) {
             $table->id();
 
-            $table->string('text');
+            $table->string('text','500');
 
             $table->boolean('enabled')->default(true);
             $table->integer('order')->nullable();
