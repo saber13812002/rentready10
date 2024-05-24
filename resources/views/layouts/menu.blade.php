@@ -23,7 +23,7 @@
                         @foreach($menus as $menu)
                             <li class="mr-12 xl:mr-15 relative group">
                                 <a href="/{{ $menu->slug }}"
-                                   class="block text-white active font-semibold text-16px ease-in duration-300 relative">{{$menu->title}}</a>
+                                   class="block text-white {{ request()->is($menu->slug) ? 'active' : '' }} font-semibold text-16px ease-in duration-300 relative">{{$menu->title}}</a>
                             </li>
                         @endforeach
                     </ul>
