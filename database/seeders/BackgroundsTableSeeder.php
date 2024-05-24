@@ -47,6 +47,20 @@ class BackgroundsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            4 => 
+            array (
+                'id' => 5,
+                'key' => 'resources',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'key' => 'slider',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         
