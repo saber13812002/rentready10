@@ -56,7 +56,7 @@
     <div class="container">
         <div class="section-title md:mb-20 lg:mb-20 text-center">
             <h2 class="font-black text-22px md:text-30px lg:text-35px xl:text-65px mb-6 text-white">
-                {{ $options['why_title']??"" }}?</h2>
+                {{ $options['why_title']??"" }}</h2>
             <p class="lg:text-30px md:text-15px text-13px lg:max-w-2xl lg:mx-auto leading-7 md:leading-9 text-white">
                 {{ $options['why']??"" }}</p>
         </div>
