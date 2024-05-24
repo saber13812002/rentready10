@@ -54,7 +54,7 @@ class Slider extends Resource
             Number::make('order'),
 
 
-            Images::make('Image', 'image')
+            Images::make('Image', 'slider-image')
                 ->customPropertiesFields([
                     Text::make('Alt', 'alt'),
                 ]),

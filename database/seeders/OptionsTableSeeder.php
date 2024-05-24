@@ -110,8 +110,16 @@ class OptionsTableSeeder extends Seeder
             11 => 
             array (
                 'id' => 14,
-                'key' => 'title_why',
+                'key' => 'why_title',
                 'value' => 'why wg',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            12 => 
+            array (
+                'id' => 15,
+                'key' => 'login_link',
+                'value' => 'https://secure.getjobber.com',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),

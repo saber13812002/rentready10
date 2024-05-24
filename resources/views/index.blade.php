@@ -23,9 +23,10 @@
 
     <div class="main-banner-area relative z-1 h-fit">
 
-        @include('layouts.menu', compact('menus','footers'))
+        @include('layouts.menu', compact('menus','footers','options'))
 
-        @include('layouts.nav_response', compact('menus','footers'))
+        @include('layouts.nav_response', compact('menus','footers','options'))
+
 
         <div class="main-banner-area lg:bg-transparent flex flex-row justify-center items-center h-full relative">
             <div class="container xl:max-w-full 3xl:max-w-[1700px]">

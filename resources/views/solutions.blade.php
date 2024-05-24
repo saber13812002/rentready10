@@ -15,16 +15,16 @@
         rel="stylesheet">
 
     <title>{{ $options['title']??"" }}</title>
-    <link rel="icon" type="image/png" href="/storage/assets/img/logo.png">
+    <link rel="icon" type="image/png" href="{{ $footers->logo }}">
 </head>
 <body dir="ltr">
 
 <div class="bg-[#01371F]">
     <div class="main-banner-area relative z-1">
 
-        @include('layouts.menu', compact('menus','footers'))
+        @include('layouts.menu', compact('menus','footers','options'))
 
-        @include('layouts.nav_response', compact('menus','footers'))
+        @include('layouts.nav_response', compact('menus','footers','options'))
 
 
         <div class="main-banner-area bg-[#01371F] relative z-1 pt-60 md:pt-80 xl:pt-40">

@@ -28,7 +28,7 @@
                         @endforeach
                     </ul>
                     <div class="self-center">
-                        <a href="contact.html"
+                        <a href="{{ $options['login_link']??"" }}"
                            class="inline-block font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-black-color pt-17 pb-13 pl-35 pr-35 bg-[#c0d1c0]">Login</a>
                     </div>
                 </div>
