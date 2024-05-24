@@ -20,7 +20,7 @@
 </head>
 <body dir="ltr">
 
-<div class="bg-no-repeat bg-cover" style="background-image: url({{ $backgrounds['about_us']??"/storage\assets\img\shutterstock_225114895_(1).jpg" }})">
+<div class="bg-no-repeat bg-cover" style="background-image: url('{{ $backgrounds['about_us']??"/storage\assets\img\shutterstock_225114895_(1).jpg" }}')">
 
     <div class="main-banner-area relative z-1 pt-60 md:pt-80 xl:pt-40 h-screen" >
 
