@@ -72,6 +72,7 @@
                     <div class="relative flex flex-row items-start gap-20 ease-in duration-300 rounded-lg mt-25">
                         <div class="flex flex-row justify-start items-start pt-10 mb-18 md:mb-0">
                             <img
+                            class="max-w-[100px]"
                                 src="{{ $benefit->logo }}">
                         </div>
                         <div>

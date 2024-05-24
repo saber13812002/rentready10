@@ -37,7 +37,7 @@
                         @csrf
 
                         @if (session('success'))
-                            <div class="alert alert-success">
+                            <div class="alert alert-success text-white text-center text-35px">
                                 {{ session('success') }}
                             </div>
                         @else
