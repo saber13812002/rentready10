@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Artisan;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -12,6 +13,17 @@ class SolutionBenefit extends Model implements HasMedia
 {
     use HasFactory;
     use InteractsWithMedia;
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::saving(function () {
+
+            Artisan::call('cache:clear');
+
+        });
+    }
 
     protected $guarded = [];
 
