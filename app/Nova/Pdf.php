@@ -3,7 +3,9 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\File;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Pdf extends Resource
@@ -41,6 +43,15 @@ class Pdf extends Resource
     {
         return [
             ID::make()->sortable(),
+
+
+            Text::make('key')->withMeta(['extraAttributes' => [
+                'readonly' => true
+            ]]),
+
+            File::make('pdf')
+                ->acceptedTypes('application/pdf')
+                ->rules('required'),
         ];
     }
 

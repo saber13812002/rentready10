@@ -92,7 +92,7 @@
                     <div class="relative flex flex-row items-start gap-20 ease-in duration-300 rounded-lg mt-25">
                         <div class="flex flex-row justify-start items-start pt-10 mb-18 md:mb-0">
                             <img
-                            class="max-w-[100px]"
+                                class="max-w-[100px]"
                                 src="{{ $benefit->logo }}">
                         </div>
                         <div>
@@ -132,8 +132,8 @@
                         <div
                             class="overview-content w-[50%] flex flex-col justify-center items-center gap-18 self-center lg:relative lg:top-12 xl:top-20">
                             <img alt=""
-                                  src="{{ $how_work->logo }}"
-                                  class="w-[100px] h-100"/>
+                                 src="{{ $how_work->logo }}"
+                                 class="w-[100px] h-100"/>
                             <p class="font-bold text-13px md:text-30px lg:text-20px leading-7 md:leading-8 text-optional-color text-center w-[350px]">
                                 {{ $how_work->text }}</p>
                         </div>
@@ -151,8 +151,8 @@
                         <div
                             class="overview-content w-[50%] flex flex-col justify-center items-center gap-18 self-center lg:relative lg:top-12 xl:top-20">
                             <img alt=""
-                                  src="{{ $how_work->logo }}"
-                                  class="w-[100px] h-100"/>
+                                 src="{{ $how_work->logo }}"
+                                 class="w-[100px] h-100"/>
                             <p class="font-bold text-13px md:text-30px lg:text-20px leading-7 md:leading-8 text-optional-color text-center w-[350px]">
                                 {{ $how_work->text }}</p>
                         </div>
@@ -169,33 +169,39 @@
     @endforeach
 
 </div>
-
-<div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#01371F] relative">
-    <div class="container">
-        <div class="text-center xl:ml-auto xl:mr-auto xl:max-w-[1115px]">
-            <h1 class="font-black text-white text-25px md:text-40px lg:text-51px xl:text-65px mb-12 md:mb-15 lg:mb-20">
-                Ready to Level Up Your Make Ready Process? Let’s Talk.</h1>
-            <a href="profile-authentication.html"
-               class="inline-block mt-0 md:mt-5 lg:mt-10 font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-black-color pt-17 pb-15 pl-35 pr-35 bg-[#c0d1c0]">
-                Schedule a Call with Sales
-            </a>
+@foreach($call_to_actions as $call)
+    @if($call->id==1)
+        <div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#01371F] relative">
+            <div class="container">
+                <div class="text-center xl:ml-auto xl:mr-auto xl:max-w-[1115px]">
+                    <h1 class="font-black text-white text-25px md:text-40px lg:text-51px xl:text-65px mb-12 md:mb-15 lg:mb-20">
+                        {{ $call->title }}</h1>
+                    <a href="{{ $call->link }}"
+                       class="inline-block mt-0 md:mt-5 lg:mt-10 font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-black-color pt-17 pb-15 pl-35 pr-35 bg-[#c0d1c0]">
+                        {{ $call->button }}
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    @endif
+@endforeach
 
-<div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#c0d1c0] relative">
-    <div class="container">
-        <div class="text-center xl:ml-auto xl:mr-auto xl:max-w-[1115px]">
-            <h1 class="font-black text-black-color text-25px md:text-40px lg:text-51px xl:text-65px mb-12 md:mb-15 lg:mb-20">
-                Ready to Level Up Your Make Ready Process? Let’s Talk.</h1>
-            <a href="profile-authentication.html"
-               class="inline-block mt-0 md:mt-5 lg:mt-10 font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-white pt-17 pb-15 pl-35 pr-35 bg-[#01371F]">
-                Schedule a Call with Sales
-            </a>
+@foreach($call_to_actions as $call)
+    @if($call->id==2)
+        <div class="pt-60 pb-60 md:pt-80 lg:pt-100 bg-[#c0d1c0] relative">
+            <div class="container">
+                <div class="text-center xl:ml-auto xl:mr-auto xl:max-w-[1115px]">
+                    <h1 class="font-black text-black-color text-25px md:text-40px lg:text-51px xl:text-65px mb-12 md:mb-15 lg:mb-20">
+                        {{ $call->title }}</h1>
+                    <a href="{{ $call->link }}"
+                       class="inline-block mt-0 md:mt-5 lg:mt-10 font-semibold text-13px md:text-14px lg:text-15px rounded-xl text-white pt-17 pb-15 pl-35 pr-35 bg-[#01371F]">
+                        {{ $call->button }}
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
+    @endif
+@endforeach
 
 @include('layouts.footer',compact('footers'))
 

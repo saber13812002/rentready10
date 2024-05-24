@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CallToAction;
 use App\Models\ContactUs;
 use App\Models\Solution;
 use App\Repositories\BackgroundRepository;
@@ -38,6 +39,7 @@ class PageController extends Controller
 //        dd($menus);
         $quotes = (new QuoteRepository())->getEnabled();
         $backgrounds = (new BackgroundRepository())->getEnabled();
+
 //        dd($quotes);
         return view('index', compact(
             'menus',
@@ -59,11 +61,12 @@ class PageController extends Controller
         $options = (new OptionRepository())->getEnabled();
         $menus = (new MenuRepository())->getEnabled();
         $solutions = Solution::all();
-        $footers = (new FooterRepository())->getEnabled();
-        $how_works = (new HowWorkRepository())->getEnabled();
-        $our_services = (new OurServiceRepository())->getEnabled();
         $backgrounds = (new BackgroundRepository())->getEnabled();
+        $our_services = (new OurServiceRepository())->getEnabled();
         $solution_benefits = (new SolutionBenefitRepository())->getEnabled();
+        $how_works = (new HowWorkRepository())->getEnabled();
+        $call_to_actions = CallToAction::all();
+        $footers = (new FooterRepository())->getEnabled();
 //        dd($how_works[0]->image);
 //        dd($how_works[0]->logo);
 //        dd($footers->logo);
@@ -75,6 +78,7 @@ class PageController extends Controller
             'our_services',
             'backgrounds',
             'solution_benefits',
+            'call_to_actions',
             'footers',
             'how_works',
             'solutions',

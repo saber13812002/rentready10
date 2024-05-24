@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class CallToAction extends Resource
@@ -41,6 +42,30 @@ class CallToAction extends Resource
     {
         return [
             ID::make()->sortable(),
+
+
+            Text::make('title')->rules('max:255')->displayUsing(function ($text) {
+                if (strlen($text) > 60) {
+                    return substr($text, 0, 60) . '...';
+                }
+                return $text;
+            }),
+
+            Text::make('button')->rules('max:255')->displayUsing(function ($text) {
+                if (strlen($text) > 60) {
+                    return substr($text, 0, 60) . '...';
+                }
+                return $text;
+            }),
+
+            Text::make('link')->rules('max:255')->displayUsing(function ($text) {
+                if (strlen($text) > 60) {
+                    return substr($text, 0, 60) . '...';
+                }
+                return $text;
+            }),
+
+
         ];
     }
 
