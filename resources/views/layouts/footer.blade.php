@@ -27,28 +27,28 @@
                 <ul class="mt-15 md:mt-25 md:mb-25">
                     <li class="inline-block mr-5 last:mr-0">
                         <a href="{{ $footers->facebook }}" target="_blank"
-                           class="block w-35 rounded-full transition relative h-35 text-center hover:opacity-90">
+                           class="block w-35 border-white border rounded-full transition relative h-35 text-center hover:opacity-90">
                             <img src="/storage/assets/img/social/white-facebook.svg"
                                  class="w-8 absolute left-0 right-0 top-1/2 m-auto -translate-y-2/4" alt="facebook">
                         </a>
                     </li>
                     <li class="inline-block mr-5 last:mr-0">
                         <a href="{{ $footers->twitter }}" target="_blank"
-                           class="block w-35 rounded-full transition relative h-35 text-center hover:opacity-90">
+                           class="block w-35 rounded-full border-white border transition relative h-35 text-center hover:opacity-90">
                             <img src="/storage/assets/img/social/white-twitter.svg"
                                  class="w-15 absolute left-0 right-0 top-1/2 m-auto -translate-y-2/4" alt="twitter">
                         </a>
                     </li>
                     <li class="inline-block mr-5 last:mr-0">
                         <a href="{{ $footers->linkedin }}" target="_blank"
-                           class="block w-35 rounded-full transition relative h-35 text-center hover:opacity-90">
+                           class="block w-35 rounded-full border-white border transition relative h-35 text-center hover:opacity-90">
                             <img src="/storage/assets/img/social/white-linkedin.svg"
                                  class="w-15 absolute left-0 right-0 top-1/2 m-auto -translate-y-2/4" alt="linkedin">
                         </a>
                     </li>
                     <li class="inline-block mr-5 last:mr-0">
                         <a href="{{ $footers->instagram }}" target="_blank"
-                           class="block w-35 rounded-full transition relative h-35 text-center hover:opacity-90">
+                           class="block w-35 rounded-full border-white border transition relative h-35 text-center hover:opacity-90">
                             <img src="/storage/assets/img/social/white-instagram.svg"
                                  class="w-15 absolute left-0 right-0 top-1/2 m-auto -translate-y-2/4" alt="instagram">
                         </a>

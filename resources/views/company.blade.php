@@ -19,7 +19,7 @@
 </head>
 <body dir="ltr">
 
-<div class="bg-no-repeat bg-cover" style="background-image: url({{ $backgrounds['company']->image??"" }})">
+<div class="bg-no-repeat bg-cover" style="background-image: url(blob:http://127.0.0.1:8000/9c86431b-034f-4bf3-a8eb-858b485c09f8)">
 
     <div class="main-banner-area relative z-1 pt-60 md:pt-80 xl:pt-40 h-screen" >
 
@@ -51,7 +51,7 @@
     </div>
 </div>
 
-<div class="relative pt-60 md:pt-80 lg:pt-200 pb-60 md:pb-80 lg:pb-200 bg-subscription-bg bg-cover bg-no-repeat bg-center before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:bg-[#c0d1c0] before:opacity-30" style="background-image: url({{ $backgrounds['company']->image??"" }});">
+<div class="relative pt-60 md:pt-80 lg:pt-200 pb-60 md:pb-80 lg:pb-200 bg-subscription-bg bg-cover bg-no-repeat bg-center before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:bg-[#c0d1c0] before:opacity-30" style="background-image: url(blob:http://127.0.0.1:8000/9c86431b-034f-4bf3-a8eb-858b485c09f8);">
     <div class="container">
         <div class="text-center">
             <h2 class="font-black text-28pxpx md:text-30px lg:text-35px xl:text-65px mb-15 text-white">Discover more about {{ $options['title']??"" }}.</h2>

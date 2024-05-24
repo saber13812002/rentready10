@@ -21,7 +21,7 @@
 
 <div class="bg-cover bg-no-repeat" style="background-image: url(/storage/assets/img/WG.png)">
 
-    <div class="main-banner-area relative z-1 h-screen">
+    <div class="main-banner-area relative z-1 h-fit">
 
         @include('layouts.menu', compact('menus','footers'))
 
@@ -94,7 +94,7 @@
 
 <div class="feedback-area relative pt-60 md:pt-80 lg:pt-100 pb-60 md:pb-80 lg:pb-100 bg-[#01371F]">
     <div
-        class="customOne z-0 swiper-button-prev absolute left-0 top-1/2 mt-0 w-42 md:w-50 bg-white shadow-custom-box-shadow3 rounded-full mr-10 opacity-100 h-42 md:h-50 top-0 inline-block after:hidden hover:bg-secondary-gradient-color">
+        class="customOne swiper-button-prev absolute left-0 top-1/2 mt-0 w-42 md:w-50 bg-white shadow-custom-box-shadow3 rounded-full mr-10 opacity-100 h-42 md:h-50 top-0 inline-block after:hidden hover:bg-secondary-gradient-color">
         <svg xmlns="http://www.w3.org/2000/svg"
              class="h-26 w-26 absolute left-0 right-0 top-1/2 m-auto -translate-y-2/4" fill="none" viewBox="0 0 24 24"
              stroke="currentColor">
@@ -124,7 +124,7 @@
         </div>
     </div>
     <div
-        class="customTwo z-0 swiper-button-next absolute right-0 top-1/2 mt-0 w-42 md:w-50 bg-white shadow-custom-box-shadow3 rounded-full ml-10 h-42 md:h-50 top-0 inline-block after:hidden hover:bg-secondary-gradient-color">
+        class="customTwo swiper-button-next absolute right-0 top-1/2 mt-0 w-42 md:w-50 bg-white shadow-custom-box-shadow3 rounded-full ml-10 h-42 md:h-50 top-0 inline-block after:hidden hover:bg-secondary-gradient-color">
         <svg xmlns="http://www.w3.org/2000/svg"
              class="h-20 w-20 absolute left-0 right-0 top-1/2 m-auto -translate-y-2/4" fill="none" viewBox="0 0 24 24"
              stroke="currentColor">

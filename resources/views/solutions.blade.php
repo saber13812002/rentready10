@@ -55,9 +55,9 @@
                             class="w-[76px] h-[78px] bg-center bg-no-repeat bg-cover relative font-bold text-15px text-secondary-color text-center"
                             alt=""/>
                         <h1 class="font-bold text-14px md:text-15px lg:text-30px">
-                            <a href="blog-details.html" class="inline-block text-white ease-in duration-300">
+                            <span class="inline-block text-white ease-in duration-300">
                                 {{ $our_service->title }}
-                            </a>
+                            </span>
                         </h1>
                     </li>
                 @endforeach
