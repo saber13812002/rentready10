@@ -47,40 +47,40 @@
                                     <div class="flex flex-col justify-start items-start w-full">
                                         <label class="font-bold text-white">First Name</label>
                                         <input type="text" name="first_name"
-                                               class="block w-full rounded-xl text-white bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
                                     </div>
                                     <div class="flex flex-col justify-start items-start w-full">
                                         <label class="font-bold text-white">Last Name</label>
                                         <input type="text" name="last_name"
-                                               class="block w-full rounded-xl text-white bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
                                     </div>
                                 </div>
                                 <div class="p-20">
                                     <label class="font-bold text-white">Company (required)</label>
                                     <div class="grid gap-20 grid-cols-1 ">
                                         <input type="text" name="company"
-                                               class="block w-full rounded-xl text-white bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
                                     </div>
                                 </div>
                                 <div class="p-20">
                                     <label class="font-bold text-white">Phone Number (required)</label>
                                     <div class="grid gap-20 grid-cols-1 ">
                                         <input type="text" name="phone"
-                                               class="block w-full rounded-xl text-white bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
                                     </div>
                                 </div>
                                 <div class="p-20">
                                     <label class="font-bold text-white">Email (required)</label>
                                     <div class="grid gap-20 grid-cols-1 ">
                                         <input type="text" name="email"
-                                               class="block w-full rounded-xl text-white bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
                                     </div>
                                 </div>
                                 <div class="p-20">
                                     <label class="font-bold text-white">Questions? How can we help?</label>
                                     <div class="grid gap-20 grid-cols-1 ">
                                         <input type="text" name="topic"
-                                               class="block w-full rounded-xl text-white bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
+                                               class="block w-full rounded-xl text-black-color bg-[#F5F0E8] h-50 lg:h-42 leading-[50px] lg:leading-[60px] pl-15 pr-15  outline-0   text-13px md:text-15px lg:text-16px">
                                     </div>
                                 </div>
                             </div>
