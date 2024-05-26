@@ -129,6 +129,7 @@ class PageController extends Controller
      */
     public function contact()
     {
+        $options = (new OptionRepository())->getEnabled();
         $menus = (new MenuRepository())->getEnabled();
         $backgrounds = (new BackgroundRepository())->getEnabled();
         $footers = (new FooterRepository())->getEnabled();
@@ -136,6 +137,7 @@ class PageController extends Controller
         return view('contact', compact(
             'menus',
             'backgrounds',
+            'options',
             'footers'
         ));
     }
