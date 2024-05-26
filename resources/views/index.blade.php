@@ -53,7 +53,7 @@
     </div>
 </div>
 
-<div class="features-area pt-30 lg:pt-50 pb-60 md:pb-80 lg:pb-50 relative bg-[#01371F]">
+<div class="features-area pt-30 lg:pt-50 pb-60 md:pb-80 lg:pb-50 relative bg-[#01371F] md:bg-[#01371F] sm:bg-[#01371F]">
     <div class="container">
         <div class="section-title md:mb-20 lg:mb-20 text-center">
             <h2 class="font-black text-22px md:text-30px lg:text-35px xl:text-65px mb-6 text-white">
